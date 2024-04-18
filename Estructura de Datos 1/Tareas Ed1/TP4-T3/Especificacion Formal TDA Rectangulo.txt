@@ -1,0 +1,7 @@
+TDA Rectangulo 
+1. Tipo: Rectangulo
+2. Operadores:
+   CrearRectangulo: Real --> Rectangulo
+   ObtenerAncho: rectangulo --> Real
+   ObtenerAncho: rectangulo --> Real  
+   DesplazarRectangulo: rectangulo, desplazamientoX, desplazamientoY --> Bool

@@ -1,0 +1,34 @@
+
+*************************************
+***************CADENAS***************
+
+1. Funcion cantidad de digitos pares antes de un impar Ej. CantDigPares(3827435)== 2*
+2. Funcion que muestre la cantidad de digitos pares antes de un impar Ej. GetDigPares(3827435)== 2,4
+3. Funcion que muestre el digito mayor y el digito menor GetMayorMenor(23164) --> 61
+4. Funcion que muestre el digito mayor y el digito menor. Los mismo que en diferente Edit!!!
+5. Proceso para eliminar el primer numero de una cadena Ej. x="Hola45como46estas" -> "Holacomo46estas"
+6. Funcion que muestre la palabra mas larga de una cadena Ej. CadenaMasLarga("Esta es una prueba mas") -> "prueba"
+7. Proceso que lleve el menor de los digitos al inicio de un numero Ej. x=382731 -> x=138273
+
+8. Funcion que devuelva una cadena formada por los digitos de un numero repetidos la cantidad de veces que el digito representa, max 2 funciones. Ej. CadDeDig(5021)->"55555221"
+9. Funcion que sume los numeros de una cadena Ej. SumaNumeros("20Hola 10Como")->30
+10. Funcion que elimine los numero pares de un digito. Ej: x=123456 --> 135 
+11. Funcion o proceso que cuente la cantidad de signos que hay despues de una palabra  
+    Ej. ContadorConSignos(hola@comoestas*pero#)->3 
+12. Proceso para eliminar el ultimo numero de una cadena Ej. x("Hola45como46estas") -> "Hola45comoestas"
+13. Funcion que te invierta una cadena Ej. x(12345)-> 54321
+14. Funcion o proceso que cuente la cantidad de palabras en una cadena Ej. x(Hola Mundo) --> 2
+15. Funcion o proceso que elimine las vocales en una cadena Ej. x(hola) --> hl
+16. Funcion o proceso que elimine la primera letra de una Palabra Ej x"Hola como" --> ola omo
+17. Funcion que invierta las palabras de una cadena Ej. como --> omoc
+
+
+
+
+
+
+
+
+
+
+

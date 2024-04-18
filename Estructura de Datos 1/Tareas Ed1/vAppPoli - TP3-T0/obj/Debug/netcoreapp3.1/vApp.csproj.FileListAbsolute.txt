@@ -1,0 +1,54 @@
+D:\EDI\ED v0\AppCon\vApp\bin\Debug\netcoreapp3.1\vApp.exe
+D:\EDI\ED v0\AppCon\vApp\bin\Debug\netcoreapp3.1\vApp.deps.json
+D:\EDI\ED v0\AppCon\vApp\bin\Debug\netcoreapp3.1\vApp.runtimeconfig.json
+D:\EDI\ED v0\AppCon\vApp\bin\Debug\netcoreapp3.1\vApp.runtimeconfig.dev.json
+D:\EDI\ED v0\AppCon\vApp\bin\Debug\netcoreapp3.1\vApp.dll
+D:\EDI\ED v0\AppCon\vApp\bin\Debug\netcoreapp3.1\vApp.pdb
+D:\EDI\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\EDI\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.AssemblyInfoInputs.cache
+D:\EDI\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.AssemblyInfo.cs
+D:\EDI\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.csproj.CoreCompileInputs.cache
+D:\EDI\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.dll
+D:\EDI\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.pdb
+D:\EDI\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.genruntimeconfig.cache
+D:\EDI\ED v0\AppCon\vAppPoli\bin\Debug\netcoreapp3.1\vApp.exe
+D:\EDI\ED v0\AppCon\vAppPoli\bin\Debug\netcoreapp3.1\vApp.deps.json
+D:\EDI\ED v0\AppCon\vAppPoli\bin\Debug\netcoreapp3.1\vApp.runtimeconfig.json
+D:\EDI\ED v0\AppCon\vAppPoli\bin\Debug\netcoreapp3.1\vApp.runtimeconfig.dev.json
+D:\EDI\ED v0\AppCon\vAppPoli\bin\Debug\netcoreapp3.1\vApp.dll
+D:\EDI\ED v0\AppCon\vAppPoli\bin\Debug\netcoreapp3.1\vApp.pdb
+D:\EDI\ED v0\AppCon\vAppPoli\obj\Debug\netcoreapp3.1\vApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\EDI\ED v0\AppCon\vAppPoli\obj\Debug\netcoreapp3.1\vApp.AssemblyInfoInputs.cache
+D:\EDI\ED v0\AppCon\vAppPoli\obj\Debug\netcoreapp3.1\vApp.AssemblyInfo.cs
+D:\EDI\ED v0\AppCon\vAppPoli\obj\Debug\netcoreapp3.1\vApp.csproj.CoreCompileInputs.cache
+D:\EDI\ED v0\AppCon\vAppPoli\obj\Debug\netcoreapp3.1\vApp.dll
+D:\EDI\ED v0\AppCon\vAppPoli\obj\Debug\netcoreapp3.1\vApp.pdb
+D:\EDI\ED v0\AppCon\vAppPoli\obj\Debug\netcoreapp3.1\vApp.genruntimeconfig.cache
+D:\ED1\ED v0\AppCon\vAppPoli\bin\Debug\netcoreapp3.1\vApp.exe
+D:\ED1\ED v0\AppCon\vAppPoli\bin\Debug\netcoreapp3.1\vApp.deps.json
+D:\ED1\ED v0\AppCon\vAppPoli\bin\Debug\netcoreapp3.1\vApp.runtimeconfig.json
+D:\ED1\ED v0\AppCon\vAppPoli\bin\Debug\netcoreapp3.1\vApp.runtimeconfig.dev.json
+D:\ED1\ED v0\AppCon\vAppPoli\bin\Debug\netcoreapp3.1\vApp.dll
+D:\ED1\ED v0\AppCon\vAppPoli\bin\Debug\netcoreapp3.1\vApp.pdb
+D:\ED1\ED v0\AppCon\vAppPoli\obj\Debug\netcoreapp3.1\vApp.csproj.AssemblyReference.cache
+D:\ED1\ED v0\AppCon\vAppPoli\obj\Debug\netcoreapp3.1\vApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\ED1\ED v0\AppCon\vAppPoli\obj\Debug\netcoreapp3.1\vApp.AssemblyInfoInputs.cache
+D:\ED1\ED v0\AppCon\vAppPoli\obj\Debug\netcoreapp3.1\vApp.AssemblyInfo.cs
+D:\ED1\ED v0\AppCon\vAppPoli\obj\Debug\netcoreapp3.1\vApp.csproj.CoreCompileInputs.cache
+D:\ED1\ED v0\AppCon\vAppPoli\obj\Debug\netcoreapp3.1\vApp.dll
+D:\ED1\ED v0\AppCon\vAppPoli\obj\Debug\netcoreapp3.1\vApp.pdb
+D:\ED1\ED v0\AppCon\vAppPoli\obj\Debug\netcoreapp3.1\vApp.genruntimeconfig.cache
+C:\Users\DCDS\Desktop\Tareas Ed1\vAppPoli - TP3-T0\bin\Debug\netcoreapp3.1\vApp.exe
+C:\Users\DCDS\Desktop\Tareas Ed1\vAppPoli - TP3-T0\bin\Debug\netcoreapp3.1\vApp.deps.json
+C:\Users\DCDS\Desktop\Tareas Ed1\vAppPoli - TP3-T0\bin\Debug\netcoreapp3.1\vApp.runtimeconfig.json
+C:\Users\DCDS\Desktop\Tareas Ed1\vAppPoli - TP3-T0\bin\Debug\netcoreapp3.1\vApp.runtimeconfig.dev.json
+C:\Users\DCDS\Desktop\Tareas Ed1\vAppPoli - TP3-T0\bin\Debug\netcoreapp3.1\vApp.dll
+C:\Users\DCDS\Desktop\Tareas Ed1\vAppPoli - TP3-T0\bin\Debug\netcoreapp3.1\vApp.pdb
+C:\Users\DCDS\Desktop\Tareas Ed1\vAppPoli - TP3-T0\obj\Debug\netcoreapp3.1\vApp.csproj.AssemblyReference.cache
+C:\Users\DCDS\Desktop\Tareas Ed1\vAppPoli - TP3-T0\obj\Debug\netcoreapp3.1\vApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DCDS\Desktop\Tareas Ed1\vAppPoli - TP3-T0\obj\Debug\netcoreapp3.1\vApp.AssemblyInfoInputs.cache
+C:\Users\DCDS\Desktop\Tareas Ed1\vAppPoli - TP3-T0\obj\Debug\netcoreapp3.1\vApp.AssemblyInfo.cs
+C:\Users\DCDS\Desktop\Tareas Ed1\vAppPoli - TP3-T0\obj\Debug\netcoreapp3.1\vApp.csproj.CoreCompileInputs.cache
+C:\Users\DCDS\Desktop\Tareas Ed1\vAppPoli - TP3-T0\obj\Debug\netcoreapp3.1\vApp.dll
+C:\Users\DCDS\Desktop\Tareas Ed1\vAppPoli - TP3-T0\obj\Debug\netcoreapp3.1\vApp.pdb
+C:\Users\DCDS\Desktop\Tareas Ed1\vAppPoli - TP3-T0\obj\Debug\netcoreapp3.1\vApp.genruntimeconfig.cache

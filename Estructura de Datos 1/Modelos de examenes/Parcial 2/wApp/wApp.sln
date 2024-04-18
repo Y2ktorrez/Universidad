@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32413.511
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wApp", "wApp\wApp.csproj", "{E272B73E-4B32-44F0-A9EF-A08EC2014378}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		test|Any CPU = test|Any CPU
+		test|x64 = test|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E272B73E-4B32-44F0-A9EF-A08EC2014378}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E272B73E-4B32-44F0-A9EF-A08EC2014378}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E272B73E-4B32-44F0-A9EF-A08EC2014378}.Debug|x64.ActiveCfg = Debug|x64
+		{E272B73E-4B32-44F0-A9EF-A08EC2014378}.Debug|x64.Build.0 = Debug|x64
+		{E272B73E-4B32-44F0-A9EF-A08EC2014378}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E272B73E-4B32-44F0-A9EF-A08EC2014378}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E272B73E-4B32-44F0-A9EF-A08EC2014378}.Release|x64.ActiveCfg = Release|x64
+		{E272B73E-4B32-44F0-A9EF-A08EC2014378}.Release|x64.Build.0 = Release|x64
+		{E272B73E-4B32-44F0-A9EF-A08EC2014378}.test|Any CPU.ActiveCfg = test|Any CPU
+		{E272B73E-4B32-44F0-A9EF-A08EC2014378}.test|Any CPU.Build.0 = test|Any CPU
+		{E272B73E-4B32-44F0-A9EF-A08EC2014378}.test|x64.ActiveCfg = test|x64
+		{E272B73E-4B32-44F0-A9EF-A08EC2014378}.test|x64.Build.0 = test|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CAAC8E13-C8A2-4F2E-8E36-F6B9AD63EA36}
+	EndGlobalSection
+EndGlobal

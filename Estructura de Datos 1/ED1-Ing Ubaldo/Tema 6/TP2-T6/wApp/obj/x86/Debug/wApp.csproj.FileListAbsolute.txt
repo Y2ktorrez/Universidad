@@ -1,0 +1,96 @@
+D:\EDI\wApp\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\EDI\wApp\obj\x86\Debug\wApp.fNatu.resources
+D:\EDI\wApp\obj\x86\Debug\wApp.menu.resources
+D:\EDI\wApp\obj\x86\Debug\wApp.Properties.Resources.resources
+D:\EDI\wApp\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\EDI\wApp\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\EDI\wApp\bin\Debug\wApp.exe
+D:\EDI\wApp\bin\Debug\wApp.pdb
+D:\EDI\wApp\bin\Debug\cApp.dll
+D:\EDI\wApp\bin\Debug\cApp.pdb
+D:\EDI\wApp\obj\x86\Debug\wApp.exe
+D:\EDI\wApp\obj\x86\Debug\wApp.pdb
+D:\EDI\wApp\obj\x86\Debug\wApp.FSparce.resources
+D:\EDI\wApp\obj\x86\Debug\wApp.FPila.resources
+D:\EDI\wApp\obj\x86\Debug\wApp.FCola.resources
+D:\EDI\wApp\obj\x86\Debug\wApp.FcolaC.resources
+D:\EDI\wApp\obj\x86\Debug\wApp.FPilaM.resources
+D:\EDI\wApp\obj\x86\Debug\wApp.fSlist.resources
+D:\EDI\wApp\obj\x86\Debug\wApp.FPoly.resources
+D:\EDI\ED v1\wApp\obj\x86\Debug\wApp.exe
+D:\EDI\ED v1\wApp\obj\x86\Debug\wApp.pdb
+D:\EDI\ED v1\wApp\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\EDI\ED v1\wApp\obj\x86\Debug\wApp.fNatu.resources
+D:\EDI\ED v1\wApp\obj\x86\Debug\wApp.menu.resources
+D:\EDI\ED v1\wApp\obj\x86\Debug\wApp.Properties.Resources.resources
+D:\EDI\ED v1\wApp\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\EDI\ED v1\wApp\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\EDI\ED v1\wApp\bin\Debug\wApp.exe
+D:\EDI\ED v1\wApp\bin\Debug\wApp.pdb
+D:\EDI\ED v1\wApp\bin\Debug\cApp.dll
+D:\EDI\ED v1\wApp\bin\Debug\cApp.pdb
+D:\EDI\ED v3\wApp\obj\x86\Debug\wApp.exe
+D:\EDI\ED v3\wApp\obj\x86\Debug\wApp.pdb
+D:\EDI\ED v3\wApp\bin\Debug\wApp.exe
+D:\EDI\ED v3\wApp\bin\Debug\wApp.pdb
+D:\EDI\ED v3\wApp\bin\Debug\cApp.dll
+D:\EDI\ED v3\wApp\bin\Debug\cApp.pdb
+D:\EDI\ED v3\wApp\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\EDI\ED v3\wApp\obj\x86\Debug\wApp.fFigu.resources
+D:\EDI\ED v3\wApp\obj\x86\Debug\wApp.fNatu.resources
+D:\EDI\ED v3\wApp\obj\x86\Debug\wApp.menu.resources
+D:\EDI\ED v3\wApp\obj\x86\Debug\wApp.Properties.Resources.resources
+D:\EDI\ED v3\wApp\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\EDI\ED v3\wApp\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\EDI\ED v4\wApp\obj\x86\Debug\wApp.exe
+D:\EDI\ED v4\wApp\obj\x86\Debug\wApp.pdb
+D:\EDI\ED v4\wApp\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\EDI\ED v4\wApp\obj\x86\Debug\wApp.fFigu.resources
+D:\EDI\ED v4\wApp\obj\x86\Debug\wApp.fNatu.resources
+D:\EDI\ED v4\wApp\obj\x86\Debug\wApp.FPila.resources
+D:\EDI\ED v4\wApp\obj\x86\Debug\wApp.menu.resources
+D:\EDI\ED v4\wApp\obj\x86\Debug\wApp.Properties.Resources.resources
+D:\EDI\ED v4\wApp\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\EDI\ED v4\wApp\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\EDI\ED v4\wApp\bin\Debug\wApp.exe
+D:\EDI\ED v4\wApp\bin\Debug\wApp.pdb
+D:\EDI\ED v4\wApp\bin\Debug\cApp.dll
+D:\EDI\ED v4\wApp\bin\Debug\cApp.pdb
+D:\EDI\ED v5\wApp\obj\x86\Debug\wApp.exe
+D:\EDI\ED v5\wApp\obj\x86\Debug\wApp.pdb
+D:\EDI\ED v5\wApp\obj\x86\Debug\wApp.FCola.resources
+D:\EDI\ED v5\wApp\obj\x86\Debug\wApp.menu.resources
+D:\EDI\ED v5\wApp\obj\x86\Debug\wApp.Properties.Resources.resources
+D:\EDI\ED v5\wApp\bin\Debug\wApp.exe
+D:\EDI\ED v5\wApp\bin\Debug\wApp.pdb
+D:\EDI\ED v5\wApp\bin\Debug\cApp.dll
+D:\EDI\ED v5\wApp\bin\Debug\cApp.pdb
+D:\EDI\ED v6\wApp\obj\x86\Debug\wApp.exe
+D:\EDI\ED v6\wApp\obj\x86\Debug\wApp.pdb
+D:\EDI\ED v6\wApp\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\EDI\ED v6\wApp\obj\x86\Debug\wApp.FCola.resources
+D:\EDI\ED v6\wApp\obj\x86\Debug\wApp.menu.resources
+D:\EDI\ED v6\wApp\obj\x86\Debug\wApp.Properties.Resources.resources
+D:\EDI\ED v6\wApp\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\EDI\ED v6\wApp\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\EDI\ED v6\wApp\bin\Debug\wApp.exe
+D:\EDI\ED v6\wApp\bin\Debug\wApp.pdb
+D:\EDI\ED v6\wApp\bin\Debug\cApp.dll
+D:\EDI\ED v6\wApp\bin\Debug\cApp.pdb
+D:\EDI\ED v5\wApp\obj\x86\Debug\wApp.csproj.AssemblyReference.cache
+D:\EDI\ED v5\wApp\obj\x86\Debug\wApp.csproj.GenerateResource.cache
+D:\EDI\ED v5\wApp\obj\x86\Debug\wApp.csproj.CoreCompileInputs.cache
+D:\EDI\ED v5\wApp\obj\x86\Debug\wApp.csproj.CopyComplete
+D:\TDA ColaCircular\wApp\bin\Debug\wApp.exe
+D:\TDA ColaCircular\wApp\bin\Debug\wApp.pdb
+D:\TDA ColaCircular\wApp\bin\Debug\cApp.dll
+D:\TDA ColaCircular\wApp\bin\Debug\cApp.pdb
+D:\TDA ColaCircular\wApp\obj\x86\Debug\wApp.csproj.AssemblyReference.cache
+D:\TDA ColaCircular\wApp\obj\x86\Debug\wApp.menu.resources
+D:\TDA ColaCircular\wApp\obj\x86\Debug\wApp.Properties.Resources.resources
+D:\TDA ColaCircular\wApp\obj\x86\Debug\wApp.csproj.GenerateResource.cache
+D:\TDA ColaCircular\wApp\obj\x86\Debug\wApp.csproj.CoreCompileInputs.cache
+D:\TDA ColaCircular\wApp\obj\x86\Debug\wApp.csproj.CopyComplete
+D:\TDA ColaCircular\wApp\obj\x86\Debug\wApp.exe
+D:\TDA ColaCircular\wApp\obj\x86\Debug\wApp.pdb
+D:\TDA ColaCircular\wApp\obj\x86\Debug\wApp.FColaC.resources

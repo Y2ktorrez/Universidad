@@ -1,0 +1,37 @@
+D:\Users\TheCrow\Documents\Universidad\semestre 4\ED1\Modelo de examen\Examen 2\wApp\wApp\bin\x64\test\wApp.exe.config
+D:\Users\TheCrow\Documents\Universidad\semestre 4\ED1\Modelo de examen\Examen 2\wApp\wApp\bin\x64\test\wApp.exe
+D:\Users\TheCrow\Documents\Universidad\semestre 4\ED1\Modelo de examen\Examen 2\wApp\wApp\bin\x64\test\cApp.dll
+D:\Users\TheCrow\Documents\Universidad\semestre 4\ED1\Modelo de examen\Examen 2\wApp\wApp\bin\x64\test\cApp.pdb
+D:\Users\TheCrow\Documents\Universidad\semestre 4\ED1\Modelo de examen\Examen 2\wApp\wApp\obj\x64\test\wApp.csproj.AssemblyReference.cache
+D:\Users\TheCrow\Documents\Universidad\semestre 4\ED1\Modelo de examen\Examen 2\wApp\wApp\obj\x64\test\wApp.FExamen.resources
+D:\Users\TheCrow\Documents\Universidad\semestre 4\ED1\Modelo de examen\Examen 2\wApp\wApp\obj\x64\test\wApp.FMenu.resources
+D:\Users\TheCrow\Documents\Universidad\semestre 4\ED1\Modelo de examen\Examen 2\wApp\wApp\obj\x64\test\wApp.Properties.Resources.resources
+D:\Users\TheCrow\Documents\Universidad\semestre 4\ED1\Modelo de examen\Examen 2\wApp\wApp\obj\x64\test\wApp.csproj.GenerateResource.cache
+D:\Users\TheCrow\Documents\Universidad\semestre 4\ED1\Modelo de examen\Examen 2\wApp\wApp\obj\x64\test\wApp.csproj.CoreCompileInputs.cache
+D:\Users\TheCrow\Documents\Universidad\semestre 4\ED1\Modelo de examen\Examen 2\wApp\wApp\obj\x64\test\wApp.csproj.CopyComplete
+D:\Users\TheCrow\Documents\Universidad\semestre 4\ED1\Modelo de examen\Examen 2\wApp\wApp\obj\x64\test\wApp.exe
+C:\Users\HP\Downloads\Telegram Desktop\ED1\Modelo de examen\Examen 2\wApp\wApp\bin\x64\test\wApp.exe.config
+C:\Users\HP\Downloads\Telegram Desktop\ED1\Modelo de examen\Examen 2\wApp\wApp\bin\x64\test\wApp.exe
+C:\Users\HP\Downloads\Telegram Desktop\ED1\Modelo de examen\Examen 2\wApp\wApp\bin\x64\test\cApp.dll
+C:\Users\HP\Downloads\Telegram Desktop\ED1\Modelo de examen\Examen 2\wApp\wApp\bin\x64\test\cApp.pdb
+C:\Users\HP\Downloads\Telegram Desktop\ED1\Modelo de examen\Examen 2\wApp\wApp\obj\x64\test\wApp.csproj.AssemblyReference.cache
+C:\Users\HP\Downloads\Telegram Desktop\ED1\Modelo de examen\Examen 2\wApp\wApp\obj\x64\test\wApp.FExamen.resources
+C:\Users\HP\Downloads\Telegram Desktop\ED1\Modelo de examen\Examen 2\wApp\wApp\obj\x64\test\wApp.FMenu.resources
+C:\Users\HP\Downloads\Telegram Desktop\ED1\Modelo de examen\Examen 2\wApp\wApp\obj\x64\test\wApp.Properties.Resources.resources
+C:\Users\HP\Downloads\Telegram Desktop\ED1\Modelo de examen\Examen 2\wApp\wApp\obj\x64\test\wApp.csproj.GenerateResource.cache
+C:\Users\HP\Downloads\Telegram Desktop\ED1\Modelo de examen\Examen 2\wApp\wApp\obj\x64\test\wApp.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\Telegram Desktop\ED1\Modelo de examen\Examen 2\wApp\wApp\obj\x64\test\wApp.csproj.CopyComplete
+C:\Users\HP\Downloads\Telegram Desktop\ED1\Modelo de examen\Examen 2\wApp\wApp\obj\x64\test\wApp.exe
+C:\Users\DCDS\Desktop\Examen 2\wApp\wApp\bin\x64\test\wApp.exe.config
+C:\Users\DCDS\Desktop\Examen 2\wApp\wApp\bin\x64\test\wApp.exe
+C:\Users\DCDS\Desktop\Examen 2\wApp\wApp\bin\x64\test\cApp.dll
+C:\Users\DCDS\Desktop\Examen 2\wApp\wApp\bin\x64\test\cApp.pdb
+C:\Users\DCDS\Desktop\Examen 2\wApp\wApp\obj\x64\test\wApp.csproj.AssemblyReference.cache
+C:\Users\DCDS\Desktop\Examen 2\wApp\wApp\obj\x64\test\wApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\DCDS\Desktop\Examen 2\wApp\wApp\obj\x64\test\wApp.FExamen.resources
+C:\Users\DCDS\Desktop\Examen 2\wApp\wApp\obj\x64\test\wApp.FMenu.resources
+C:\Users\DCDS\Desktop\Examen 2\wApp\wApp\obj\x64\test\wApp.Properties.Resources.resources
+C:\Users\DCDS\Desktop\Examen 2\wApp\wApp\obj\x64\test\wApp.csproj.GenerateResource.cache
+C:\Users\DCDS\Desktop\Examen 2\wApp\wApp\obj\x64\test\wApp.csproj.CoreCompileInputs.cache
+C:\Users\DCDS\Desktop\Examen 2\wApp\wApp\obj\x64\test\wApp.csproj.CopyComplete
+C:\Users\DCDS\Desktop\Examen 2\wApp\wApp\obj\x64\test\wApp.exe

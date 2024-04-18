@@ -1,0 +1,731 @@
+//---------------------------------------------------------------------------
+
+#include <vcl.h>
+#pragma hdrstop
+
+#include "Unit1.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.dfm"
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+
+/*Proceso adicional para Eliminar la cantidad de elementos de un
+  vector, o tambien eliminar posisicon de un vector
+  Ej. v(1,2,3,4,5), pos=2 -> v(1,2,4,5)*/
+
+void EliminarPos(TStringGrid *v, byte &n, byte p)
+{ if (n>p){
+	if ((n-1)==p){
+	  n=n-1;
+	} else{
+		byte e=StrToInt(v->Cells[n-1][0]);
+		n=n-1;
+		EliminarPos(v,n,p);
+		v->Cells[n][0]=e;
+		n=n+1;
+	}
+  }
+}
+
+/*Escribir un proceso para eliminar m datos de un vector de n numeros
+  desde la posicion p. Pueden escribir hasta dos procesos
+  Ej. Eliminar(1,4,3,2,6,7,8,1,9)->n=9,m=3,p=5 -> v(1,4,3,2,6,9)*/
+
+// v[1, 2, 3, 4, 5] --> pos(1) cantidad a eliminar(2) --> v[1,4,5]
+
+void EliminarCant(TStringGrid *v, byte &n, byte p, byte cant){
+	if(cant>0){
+			EliminarPos(v,n,p);
+			EliminarCant(v,n,p,cant-1);
+	}
+}
+
+void __fastcall TForm1::N12Click(TObject *Sender)
+{
+	 /**Llamado de la Funcion Auxiliar**/
+	/*byte n=StringGrid1->ColCount;
+	byte pos=StrToInt(Edit2->Text);
+	EliminarPos(StringGrid1,n,pos);
+	StringGrid1->ColCount=n; */
+
+	byte n=StringGrid1->ColCount;
+	byte pos=StrToInt(Edit2->Text);
+	byte cant=StrToInt(Edit3->Text);
+	EliminarCant(StringGrid1,n,pos,cant);
+	StringGrid1->ColCount=n;
+}
+//---------------------------------------------------------------------------
+
+/*Escribir un proceso que genere un numero con los elementos de un
+  vector de numeros. El numero generado debe ser del ultimo al
+  primero MAXIMO UN PROCESO Ej. General(8,27,3,12)n=4,x
+								 x=123728*/
+
+// generar de forma descenciente
+// ej: v[ 1, 2, 3, 3, 4, 5] --> v[5, 4, 3, 3, 2, 1] no importa si es mayor o menor
+
+void GenerarNumero(TStringGrid *v, Word n, Cardinal &x){
+	if (n==0){
+		x=0;
+	} else if (n==1){
+	   x=StrToInt(v->Cells[0][0]);
+	} else {
+		Word act= StrToInt(v->Cells[n-1][0]);
+		GenerarNumero(v,n-1,x);
+		Word CantDig=(log10((double)x)+1);
+		x=act*(pow10(CantDig))+x;
+	}
+}
+
+void __fastcall TForm1::N13Click(TObject *Sender)
+{
+	Word n=StringGrid1->ColCount;
+	Cardinal x;
+	GenerarNumero(StringGrid1,n,x);
+	ShowMessage(x);
+}
+//---------------------------------------------------------------------------
+
+//Carga Randomicamente
+
+void Cargar(TStringGrid *v,byte n)
+{ if (n>0){  //caso general
+	 Cargar(v,n-1);
+	 v->Cells[n-1][0]=Random(20);
+  }
+}
+
+void __fastcall TForm1::N31Click(TObject *Sender)
+{
+   StringGrid1->ColCount=StrToInt(Edit1->Text);
+	Cargar(StringGrid1,StrToInt(Edit1->Text));
+}
+//---------------------------------------------------------------------------
+
+// imputBox(123456) --> v[1, 2, 3, 4, 5, 6]
+void modex2(TStringGrid *v,int &n)  //dig de n en vector
+{   v->ColCount =0;
+	if (n>0){
+	byte dig=n % 10;
+	n=n / 10;
+	modex2(v,n);
+	v->Cells [v->ColCount -1][0]=StrToInt(dig);
+	v->ColCount ++;
+	}
+}
+
+void __fastcall TForm1::N32Click(TObject *Sender)
+{
+   int n=StrToInt(InputBox("","",""));
+	  modex2(StringGrid1,n);
+	  StringGrid1->ColCount --;
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+	  /*****Redimencionar*****/
+
+	  //StringGrid1->ColCount = Edit1->Text.ToInt();
+	  /*Vectores*/
+	  StringGrid1->ColCount = StrToInt(Edit1->Text);
+	  StringGrid1->RowCount = 1;
+}
+//---------------------------------------------------------------------------
+
+// De vector acumular en una Cadena  con cada inicial de las palabrasdel vector
+//ej: V[hola/que/haces] --> ShowMessage = hqh
+
+String modex6(TStringGrid *v,byte i){
+String s;
+	if (i<=v->ColCount-1 ) {
+		String x=v->Cells [i][0];
+		s=String(x[1])+ modex6(v,i+1); }
+	else s="";
+	return s;
+}
+
+void __fastcall TForm1::N51Click(TObject *Sender)
+{
+   ShowMessage(modex6(StringGrid1,0));
+}
+//---------------------------------------------------------------------------
+
+// poner digitos al vector y mostrar en la cadena
+// ej: v[1, 2, 3, 4, 5] --> Cadena(Edit) = 1235
+
+int digitosPrimos(int n){
+	int np=0;
+	if (n>0) {
+		byte d=n%10;
+		np=digitosPrimos(n/10);
+		if (d==1 || d==2 || d==3|| d==5 ||d==7) {
+			np=np*10+d;
+		}
+	}
+	return np;
+}
+int nroDigPrimos(TStringGrid *v,int n){
+	int x=0;
+	if (n>0) {
+		int d=v->Cells[n-1][0].ToInt();
+		x=nroDigPrimos(v,n-1);
+		int dp=digitosPrimos(d);
+		if (dp>0) {
+			x=x*pow(10,(int)log10(dp)+1)+dp;
+		}
+	}
+	return x;
+}
+
+
+void __fastcall TForm1::N52Click(TObject *Sender)
+{
+   int n=StringGrid1->ColCount;
+	int nprimo=nroDigPrimos(StringGrid1,n);
+	Edit2->Text=IntToStr(nprimo);
+}
+//---------------------------------------------------------------------------
+
+//Escribis palabras en un Edit y muestra en el Vector
+
+////funciona asi, dimencionar en 1 y luego en el edit (hola como)--> V[hola , como]
+
+void LoadVec(TStringGrid *vectorcito,String cad){
+cad=cad.Trim();
+int x;
+int L=cad.Length();
+	if (L>0) {
+	int p=cad.LastDelimiter(' ');
+	String ultpal=cad.SubString(p+1,L-p);
+	cad.Delete(p+1,L-p);
+	LoadVec(vectorcito,cad);
+	x=vectorcito->ColCount;
+	vectorcito->Cells[x-1][0]=ultpal;
+	vectorcito->ColCount++;
+	}
+}
+
+void __fastcall TForm1::N71Click(TObject *Sender)
+{
+	String cad=Edit3->Text;
+	LoadVec(StringGrid1,cad);
+	StringGrid1->ColCount--;  //  SGVector->ColCount=SGVector->ColCount-1
+}
+//---------------------------------------------------------------------------
+
+//Escribis palabras en un Edit y muestra en el Vector 2
+
+//lo mismo de arriba pero repite dos beses
+
+void CargarPal(TStringGrid *V,String cad){
+cad=cad.Trim();
+int x;
+int L=cad.Length();
+	if (L>0) {
+	int p=cad.LastDelimiter(' ');
+	String ultpal=cad.SubString(p+1,L-p);
+	cad.Delete(p+1,L-p);
+	CargarPal(V,cad);
+	x=V->ColCount;
+	V->Cells[x-1][0]=ultpal;
+	V->ColCount++;
+	}
+}
+
+void __fastcall TForm1::N72Click(TObject *Sender)
+{
+	String cad=Edit3->Text;
+	CargarPal(StringGrid1 ,cad);
+	CargarPal(StringGrid1,cad);
+	StringGrid1->ColCount--;
+}
+//---------------------------------------------------------------------------
+
+//cadena al vector
+//funciona asi, dimencionar en 1 y luego en el edit (1 2 3 )--> V[1 , 2, 3]
+
+void CargarString(TStringGrid *V,String cad){
+cad=cad.Trim();
+int x;
+int L=cad.Length();
+	if (L>0) {
+	int p=cad.LastDelimiter(' ');
+	String ultpal=cad.SubString(p+1,L-p);
+	cad.Delete(p+1,L-p);
+	CargarString(V,cad);
+	char c = ultpal[1];
+	ultpal.Delete(1,1);
+	ultpal=  String(UpperCase(c))+ultpal;
+
+	x=V->ColCount;
+	V->Cells[x-1][0]=ultpal;
+	V->ColCount++;
+	}
+}
+
+void __fastcall TForm1::N91Click(TObject *Sender)
+{
+	String cad=Edit3->Text;
+	CargarString(StringGrid1,cad);
+	StringGrid1->ColCount--;
+}
+//---------------------------------------------------------------------------
+
+/*Escribir una función que devuelva true si un vector contiene únicamente cadenas palíndromas. Una cadena es palíndroma si se leen igual de izquierda a derecha como de derecha a izquierda .(20 Ptos)
+	Ej.1 v["oso", "oruro", "reconocer", "arenera"] ==>  true
+	Ej2. v["rotor", "aibofobia","sala", "ala"] ==>false*/
+
+void InvertirCad(String &Cad){
+byte L=Cad.Length();
+ if ((L<=1)||(Cad=="")){
+    Cad=Cad;
+ }else {
+         String c=Cad.SubString(1,2);
+         Cad.Delete(1,2);
+         InvertirCad(Cad);
+         Cad=Cad+c[2]+c[1];
+       }
+}
+bool Palíndromas(TStringGrid *Vec,byte Dim){
+Boolean B=true;
+ if (Dim>=1) {
+ B=Palíndromas(Vec,Dim-1);
+  String C1=Vec->Cells[Dim-1][0];
+  String C2=Vec->Cells[Dim-1][0];
+  InvertirCad(C2);
+   if (C1!=C2){
+   B=false;
+   }
+ }
+ return B;
+}
+
+
+void __fastcall TForm1::N92Click(TObject *Sender)
+{
+    Boolean B=Palíndromas(StringGrid1,StringGrid1->ColCount);
+	 if (B==true){
+		Edit1->Text="true";
+	 }else Edit1->Text="false";
+}
+//---------------------------------------------------------------------------
+
+//ej: v[1, 2, 3, 4, 5] --> Edit3 = 5 => Edit = 15
+
+int sumarV(TStringGrid *v,Byte n){
+int s;
+	if (n==0){ //caso base
+		s=0;
+	}else{//caso general
+		s=sumarV(v,n-1);
+		s=s+StrToInt(v->Cells[n-1][0]);
+	}
+	return s;
+}
+
+void __fastcall TForm1::Seguimos2Click(TObject *Sender)
+{
+	Edit2->Text=sumarV(StringGrid1,StrToInt(Edit3->Text));
+}
+//---------------------------------------------------------------------------
+
+//cantidad de numeros pares del vector
+// ej: v[1, 2, 3, 4, 5] --> 2
+byte cantPar(TStringGrid *v,byte n){
+	byte c;
+	if (n==0)
+		c=0;
+	else{
+		byte d=StrToInt(v->Cells[n-1][0]);
+		c=cantPar(v,n-1);
+		if (d%2==0)
+			c++;
+	}
+	return c;
+}
+
+void __fastcall TForm1::N121Click(TObject *Sender)
+{
+		byte n=StringGrid1->ColCount;
+		Edit3->Text=StrToInt(cantPar(StringGrid1,n));
+}
+//---------------------------------------------------------------------------
+
+//eliminar un numero ej: v[1, 2, 2, 3, 4 ] --> v[1, 3, 4]
+
+void Recorrer(TStringGrid *v,byte a,byte b){
+	byte n=b-a+1;
+	if (n>0){
+		v->Cells[a][0]= v->Cells[a+1][0];
+		Recorrer(v,a+1,b);
+	}
+}
+
+void EliminarX(TStringGrid *v,byte a,byte b,byte x){
+	byte n=b-a+1;
+	if (n>0){
+		byte d=StrToInt(v->Cells[a][0]);
+		EliminarX(v,a+1,b,x);
+		if (d==x){
+			Recorrer(v,a,b);
+			v->ColCount --;
+		}
+	}
+}
+
+void __fastcall TForm1::N122Click(TObject *Sender)
+{
+	byte b=StringGrid1->ColCount-1;
+	EliminarX(StringGrid1,0,b,StrToInt(Edit1->Text));
+}
+//---------------------------------------------------------------------------
+
+//invertir un vector
+// ej: v[1, 2, 3, 4, 5] edit1(1), edit2(3) --> v[1, 4, 3, 2, 5]
+void invertir(TStringGrid *v,byte a,byte b){
+	byte n=b-a+1;
+	if (n>0) {
+		if ((a!=b)&&(a<b)){
+			invertir(v,a+1,b-1);
+			String aux=v->Cells[a][0];
+			v->Cells[a][0]=v->Cells[b][0];
+			v->Cells[b][0]=aux;
+		}
+	}
+}
+
+void __fastcall TForm1::N141Click(TObject *Sender)
+{
+	byte a=(StrToInt(Edit1->Text));
+   byte b=(StrToInt(Edit2->Text));
+   invertir(StringGrid1,a,b);
+}
+//---------------------------------------------------------------------------
+
+
+//insertar x en una posicion , Primero dimencionar luego escribir en el vector
+// v = [65515]   x=9 p=2
+// v = [65 9515]
+void anadir(TStringGrid *v,byte p,byte nu){
+if (nu>p) {
+  v->Cells[nu][0]=v->Cells[nu-1][0];
+  anadir(v,p,nu-1);
+}
+
+}
+void insertarx(TStringGrid *v,byte n,byte x,byte p,byte nu){
+  if (n>0) {
+	   if (n-1==p) {
+				anadir(v,p,nu);
+				v->Cells[p][0]=StrToInt(x);
+	   }
+	   insertarx(v,n-1,x,p,nu);
+  }
+
+}
+
+void __fastcall TForm1::N142Click(TObject *Sender)
+{
+	byte n=StrToInt(Edit1->Text);
+  byte x=StrToInt(Edit2->Text);
+  byte p=StrToInt(Edit3->Text);
+  insertarx(StringGrid1,n,x,p,n);
+   //	anadir(StringGrid1,n,x);
+}
+//---------------------------------------------------------------------------
+
+//Medio raro, veferificar
+
+//cargar serie
+//7 12 20 31 45
+//0 5  8  11 14
+byte serie(byte n,byte &k){
+byte s;
+   if (n==1) {
+	   s=7;
+   }else{
+	   s=serie(n-1,k);
+	   k=k+3;
+	   s=s+k;
+   }
+   return s;
+}
+void cargarVEC(TStringGrid *v,byte n){
+byte k=2;
+   if (n>0) {
+		  cargarVEC(v,n-1);
+		  byte d=serie(n,k);
+		  v->Cells[n-1][0]=d;
+   }
+}
+
+void __fastcall TForm1::N161Click(TObject *Sender)
+{
+   cargarVEC(StringGrid1,StrToInt(Edit1->Text));
+}
+//---------------------------------------------------------------------------
+
+//VERIFICAR
+
+// 125450
+// 12545 0
+// 1254 0 5
+ void burbojear(TStringGrid *v,byte n){
+ if (n>1){ //caso general
+	int m=StrToInt(v->Cells[n-1][0]);
+	burbojear(v,n-1);
+	if (m < (StrToInt(v->Cells[n-2][0])) ){
+				String aux=v->Cells[n-1][0];
+				v->Cells[n-1][0]=v->Cells[n-2][0];
+				v->Cells[n-2][0]=aux;
+	}
+ }
+ }
+
+
+//dado 2 vectores ordenarlos en otro vector
+void unir2VEc(TStringGrid *v,TStringGrid *v3,byte n,byte &n3){
+ if (n>0) {
+		unir2VEc(v,v3,n-1,n3);
+		n3++;
+		v3->Cells[n3-1][0]=v->Cells[n-1][0];
+ }
+}
+void ordenar2VEC(TStringGrid *v3,byte n){
+  if (n>1) {
+	   burbojear(v3,n);
+	   ordenar2VEC(v3,n-1);
+  }
+}
+
+
+void __fastcall TForm1::N162Click(TObject *Sender)
+{
+	/*burbojear(StringGrid1,StrToInt(Edit1->Text));*/
+
+	/*byte n3=0;
+	unir2VEc(StringGrid1,StringGrid3,(StrToInt(Edit1->Text)),n3);
+	unir2VEc(StringGrid2,StringGrid3,(StrToInt(Edit2->Text)),n3);
+	StringGrid3->ColCount=n3;
+	ordenar(StringGrid3,StringGrid3->ColCount); */
+}
+//---------------------------------------------------------------------------
+
+//colocar una cadena en vectores
+// ej: Edit1(Hola)  V[h, o, l, a]
+
+//Tambien funciona como cadena a vector invertida, si quito los comentarios
+
+bool verifVOl(char x){
+	String z="aeiouAEIOU";
+	return z.Pos(x)>0;
+}
+
+void eliminarvocal(String &s){
+	if (s=="") {
+		s=s ;
+	}else{
+		byte p=s.Length();
+		char z=s[p];
+		s.Delete(p,1);
+		eliminarvocal(s);
+		if (verifVOl(z)==false) {
+			s=s+z;
+		}
+	}
+}
+
+/*void InvertirString(String &x){  //como funcion
+	byte l=x.Length();
+	String s;
+	if (l<2) {
+		s=x;
+	}else{
+		char z=x[1];
+		x.Delete(1,1);
+		InvertirString(x);
+		x=x+z;
+	}
+}*/
+
+bool veriflet(char x){
+	String z="qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM";
+	return z.Pos(x)>0;
+}
+
+void insertarcad(TStringGrid *v,String &s,byte n,byte t,byte r){
+if (t >= n){
+		   char z=s[1];
+		   if (veriflet(z)==true) {
+				v->Cells[r][0]=z;
+				r++;
+		   }
+		   s.Delete(1,1);
+		   insertarcad(v,s,n+1,t,r);
+}
+}
+
+void __fastcall TForm1::N181Click(TObject *Sender)
+{
+	String s=Edit1->Text;
+	//InvertirString(s);
+	StringGrid1->ColCount=s.Length();
+	insertarcad(StringGrid1,s,1,s.Length(),0);
+}
+//---------------------------------------------------------------------------
+
+//No entiendo como funciona
+
+void invertir(int &n){
+ if (n>0){
+   byte d=n%10;
+   n=n/10;
+   invertir(n);
+   n=n*10+d ;
+}
+}
+
+void  insertvec(TStringGrid *v,byte n,int k){
+	 if (k!=0) {
+			byte d=k%100;
+			k=k/100;
+			v->Cells[n][0]=d;
+			insertvec(v,n+1,k);
+	 }
+}
+
+void __fastcall TForm1::N182Click(TObject *Sender)
+{
+   int k=StrToInt(Edit1->Text);//numero
+   insertvec(StringGrid1,0,k);
+	invertir(k);
+	Edit2->Text=StrToInt(k);
+}
+//---------------------------------------------------------------------------
+
+//Cadena a Vector, ej: edit(Hola) == v[h, o, l, a]
+
+
+void cadavec(TStringGrid *v,byte n,AnsiString x){
+byte c=x.Length();
+if (x>0) {
+	  char z=x[c];
+	  x.Delete(c,1);
+	  cadavec(v,n,x);
+	  v->Cells[c-1][0]=z;
+}
+}
+
+void __fastcall TForm1::N201Click(TObject *Sender)
+{
+    AnsiString m=Edit1->Text;
+	byte c=m.Length();
+	cadavec(StringGrid1,c,m);
+	StringGrid1->ColCount=m.Length();
+}
+//---------------------------------------------------------------------------
+
+//eliminar un numero
+//V[5265] --> Edit1(5)
+//v[264]
+
+void recorrer(TStringGrid *v,byte a,byte b){
+	byte n=b-a+1;
+	if (n>0){
+		v->Cells[a][0]= v->Cells[a+1][0];
+		recorrer(v,a+1,b);
+	}
+}
+
+void eliminarX(TStringGrid *v,byte a,byte b,byte x){
+	byte n=b-a+1;
+	if (n>0){
+		byte d=StrToInt(v->Cells[a][0]);
+		eliminarX(v,a+1,b,x);
+		if (d==x){
+			recorrer(v,a,b);
+			v->ColCount --;
+		}
+	}
+}
+
+void __fastcall TForm1::Seguimos4Click(TObject *Sender)
+{
+	//Funcion Auxiliar
+	/*Recorrer(StringGrid1,StrToInt(Edit1->Text),StrToInt(Edit2->Text));*/
+
+	 byte b=StringGrid1->ColCount-1;
+	 eliminarX(StringGrid1,0,b,StrToInt(Edit1->Text));
+}
+//---------------------------------------------------------------------------
+
+//Cuenta la cantidad de digitos que se repiten en el vector
+//ej: v[1, 2, 2] edit1(2) --> se repite 2 vecces
+
+byte cantidad(TStringGrid *v,byte a,byte b,byte d){
+ byte n=b-a+1;
+ byte c;
+ if (n==0) {
+	 c=0;
+ }else{
+	 byte k=StrToInt(v->Cells [a][0]);
+	 c=cantidad(v,a+1,b,d);
+	 if (k==d) {
+		 c++;
+	 }
+ }
+ return c;
+}
+
+void __fastcall TForm1::N221Click(TObject *Sender)
+{
+	Edit3->Text=StrToInt(cantidad(StringGrid1,0,StringGrid1->ColCount-1,StrToInt(Edit1->Text)));
+}
+//---------------------------------------------------------------------------
+
+//Elimina un dig del vector dependiendo de la posicon donde se encuentre y recorre
+//ej: v[1, 2, 3, 4, 5] --> edit1(2) => v[1, 2, 4, 5]
+
+void RRecorrer(TStringGrid *v,byte a,byte b){
+byte n=b-a+1;
+if (n>0) {
+	v->Cells [a][0]=v->Cells [a+1][0];
+	recorrer(v,a+1,b);
+}
+}
+
+void __fastcall TForm1::N222Click(TObject *Sender)
+{
+	RRecorrer(StringGrid1,StrToInt(Edit1->Text),StringGrid1->ColCount-1);
+	StringGrid1->ColCount--;
+}
+//---------------------------------------------------------------------------
+
+//Añade un dig en el vector dependiendo la posicion
+// v[1, 2, 3, 4] --> Edit1(0), Edit2(4) => v[4, 1, 2, 3, 4]
+
+void anadir(TStringGrid *v,byte a,int b,byte d){
+	byte n=b-a+1;
+	if (n>0) {
+		v->Cells [b+1][0]=v->Cells [b][0];
+		anadir(v,a,b-1,d);
+		if (b==a) {
+			v->Cells [a][0]=d;
+		}
+	}
+}
+
+void __fastcall TForm1::N241Click(TObject *Sender)
+{
+    anadir(StringGrid1 ,StrToInt(Edit1->Text),StringGrid1->ColCount-1,StrToInt(Edit2->Text));
+	StringGrid1->ColCount++;
+}
+//---------------------------------------------------------------------------
+

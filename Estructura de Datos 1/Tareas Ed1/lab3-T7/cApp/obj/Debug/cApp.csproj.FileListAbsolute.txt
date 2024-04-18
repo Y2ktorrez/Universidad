@@ -1,0 +1,6 @@
+D:\TDA Listas\cApp\bin\Debug\cApp.dll
+D:\TDA Listas\cApp\bin\Debug\cApp.pdb
+D:\TDA Listas\cApp\obj\Debug\cApp.csproj.AssemblyReference.cache
+D:\TDA Listas\cApp\obj\Debug\cApp.csproj.CoreCompileInputs.cache
+D:\TDA Listas\cApp\obj\Debug\cApp.dll
+D:\TDA Listas\cApp\obj\Debug\cApp.pdb

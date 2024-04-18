@@ -1,0 +1,18 @@
+El Video-Clubs SCORPION ha decidido, para mejorar su servicio, emplear una base de datos para almacenar la información referente a las películas que ofrece en alquiler. Esta información es la siguiente:
+
+-          Una película se caracteriza por su código, título, nacionalidad, productora y año, por ejemplo:  (“RAMBO I ”, “Estados Unidos”, “M.G.M.”, 1990).
+
+-          En una película pueden participar varios actores (Id, nombre, nacionalidad, sexo)algunos de ellos como actores principales. 
+
+-          Una película está dirigida por un director (Id, nombre, nacionalidad).
+
+-          De cada película se dispone de uno o varios ejemplares diferenciados por un número de ejemplar y caracterizados por su estado de conservación.
+
+-          Un ejemplar se puede encontrar alquilado a algún socio (Ci, nombre, dirección, teléfono). Se desea almacenar la Nota de alquiler con los siguientes datos: Nro, fecha de comienzo del alquiler, Días, fecha de devolución.
+
+-          Cada socio puede tener alquilados, en un momento dado, 4 ejemplares como máximo.
+
+-          Un socio tiene que ser avalado por otro socio que responda de él en caso de
+
+tener problemas en el alquiler.
+

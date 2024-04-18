@@ -1,0 +1,38 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit1H
+#define Unit1H
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.Menus.hpp>
+//---------------------------------------------------------------------------
+class TForm1 : public TForm
+{
+__published:	// IDE-managed Components
+	TMainMenu *MainMenu1;
+	TEdit *Edit1;
+	TEdit *Edit2;
+	TEdit *Edit3;
+	TMenuItem *Apuntedeclase1;
+	TMenuItem *Apuntedeclase2;
+	TMenuItem *Mayor1;
+	TMenuItem *SumaDIgImp1;
+	TMenuItem *Clase21;
+	TMenuItem *Clase22;
+	TMenuItem *MayorMenor1;
+	void __fastcall Apuntedeclase2Click(TObject *Sender);
+	void __fastcall Mayor1Click(TObject *Sender);
+	void __fastcall SumaDIgImp1Click(TObject *Sender);
+	void __fastcall Clase22Click(TObject *Sender);
+	void __fastcall MayorMenor1Click(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm1(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm1 *Form1;
+//---------------------------------------------------------------------------
+#endif

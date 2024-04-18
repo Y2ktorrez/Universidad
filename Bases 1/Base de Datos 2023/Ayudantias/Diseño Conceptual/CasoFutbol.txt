@@ -1,0 +1,10 @@
+Un equipo de futbol juega partidos con otros equipos. Es necesario guardar la informacion de los partidos jugados (NroPartido, fecha, hora), en que estadio juega, quienes fueron los arbitros(principal y los de linea). De los equipos, su nombre, fecha de creacion, etc. Ademas, es importante saber, en un determinado partido, que equipo juega como visitante y como anfitrion.
+
+Diseñar una base de  datos para almacenar esta informacion 
+
+IDENTIFICAR LAS CLASES:
+
+PARTIDOS
+Estadio
+Arbitros
+Equipos

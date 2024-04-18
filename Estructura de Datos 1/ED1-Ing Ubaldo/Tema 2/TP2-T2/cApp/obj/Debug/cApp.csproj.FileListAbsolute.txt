@@ -1,0 +1,16 @@
+D:\EDI\cApp\obj\Debug\ResolveAssemblyReference.cache
+D:\EDI\cApp\bin\Debug\cApp.dll
+D:\EDI\cApp\bin\Debug\cApp.pdb
+D:\EDI\cApp\obj\Debug\cApp.dll
+D:\EDI\cApp\obj\Debug\cApp.pdb
+D:\EDI\ED v1\cApp\bin\Debug\cApp.dll
+D:\EDI\ED v1\cApp\bin\Debug\cApp.pdb
+D:\EDI\ED v1\cApp\obj\Debug\ResolveAssemblyReference.cache
+D:\EDI\ED v1\cApp\obj\Debug\cApp.dll
+D:\EDI\ED v1\cApp\obj\Debug\cApp.pdb
+D:\EDI\ED v2\cApp\bin\Debug\cApp.dll
+D:\EDI\ED v2\cApp\bin\Debug\cApp.pdb
+D:\EDI\ED v2\cApp\obj\Debug\cApp.dll
+D:\EDI\ED v2\cApp\obj\Debug\cApp.pdb
+D:\EDI\ED v2\cApp\obj\Debug\cApp.csproj.AssemblyReference.cache
+D:\EDI\ED v2\cApp\obj\Debug\cApp.csproj.CoreCompileInputs.cache

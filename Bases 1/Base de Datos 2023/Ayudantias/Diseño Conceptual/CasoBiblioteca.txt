@@ -1,0 +1,1 @@
+Diseñar una base de datos para el sistemas de prestamos de libros de una biblioteca. La Biblioteca presta un solo libro a la vez , mediante una ficha de prestamos, y a una sola persona, por un determinado tiempo. Los libros pueden clasificarse por areas (matematicas, fisica, computacion, etc) pertenecieno a varias areas

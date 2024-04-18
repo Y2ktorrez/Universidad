@@ -1,0 +1,41 @@
+E:\EDI\22022\Examen1-2022\Examen1-SA-1-2022\Ed ex1 1 2022 Diag2 SA\wApp\bin\x64\Test\wApp.exe
+E:\EDI\22022\Examen1-2022\Examen1-SA-1-2022\Ed ex1 1 2022 Diag2 SA\wApp\bin\x64\Test\wApp.pdb
+E:\EDI\22022\Examen1-2022\Examen1-SA-1-2022\Ed ex1 1 2022 Diag2 SA\wApp\bin\x64\Test\cApp.dll
+E:\EDI\22022\Examen1-2022\Examen1-SA-1-2022\Ed ex1 1 2022 Diag2 SA\wApp\bin\x64\Test\cApp.pdb
+E:\EDI\22022\Examen1-2022\Examen1-SA-1-2022\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.csprojAssemblyReference.cache
+E:\EDI\22022\Examen1-2022\Examen1-SA-1-2022\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.fSpar.resources
+E:\EDI\22022\Examen1-2022\Examen1-SA-1-2022\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.menu.resources
+E:\EDI\22022\Examen1-2022\Examen1-SA-1-2022\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.Properties.Resources.resources
+E:\EDI\22022\Examen1-2022\Examen1-SA-1-2022\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.csproj.GenerateResource.cache
+E:\EDI\22022\Examen1-2022\Examen1-SA-1-2022\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.csproj.CoreCompileInputs.cache
+E:\EDI\22022\Examen1-2022\Examen1-SA-1-2022\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.csproj.CopyComplete
+E:\EDI\22022\Examen1-2022\Examen1-SA-1-2022\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.exe
+E:\EDI\22022\Examen1-2022\Examen1-SA-1-2022\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.pdb
+C:\Users\HP\Downloads\PRACTCIAS EXAMEN ED1\MODELO 2 A PILA\prueba 54555\Examen1-SA-Resuelto-2022-main\Ed ex1 1 2022 Diag2 SA\wApp\bin\x64\Test\wApp.exe
+C:\Users\HP\Downloads\PRACTCIAS EXAMEN ED1\MODELO 2 A PILA\prueba 54555\Examen1-SA-Resuelto-2022-main\Ed ex1 1 2022 Diag2 SA\wApp\bin\x64\Test\wApp.pdb
+C:\Users\HP\Downloads\PRACTCIAS EXAMEN ED1\MODELO 2 A PILA\prueba 54555\Examen1-SA-Resuelto-2022-main\Ed ex1 1 2022 Diag2 SA\wApp\bin\x64\Test\cApp.dll
+C:\Users\HP\Downloads\PRACTCIAS EXAMEN ED1\MODELO 2 A PILA\prueba 54555\Examen1-SA-Resuelto-2022-main\Ed ex1 1 2022 Diag2 SA\wApp\bin\x64\Test\cApp.pdb
+C:\Users\HP\Downloads\PRACTCIAS EXAMEN ED1\MODELO 2 A PILA\prueba 54555\Examen1-SA-Resuelto-2022-main\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.csproj.AssemblyReference.cache
+C:\Users\HP\Downloads\PRACTCIAS EXAMEN ED1\MODELO 2 A PILA\prueba 54555\Examen1-SA-Resuelto-2022-main\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.fSpar.resources
+C:\Users\HP\Downloads\PRACTCIAS EXAMEN ED1\MODELO 2 A PILA\prueba 54555\Examen1-SA-Resuelto-2022-main\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.menu.resources
+C:\Users\HP\Downloads\PRACTCIAS EXAMEN ED1\MODELO 2 A PILA\prueba 54555\Examen1-SA-Resuelto-2022-main\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.Properties.Resources.resources
+C:\Users\HP\Downloads\PRACTCIAS EXAMEN ED1\MODELO 2 A PILA\prueba 54555\Examen1-SA-Resuelto-2022-main\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.csproj.GenerateResource.cache
+C:\Users\HP\Downloads\PRACTCIAS EXAMEN ED1\MODELO 2 A PILA\prueba 54555\Examen1-SA-Resuelto-2022-main\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\PRACTCIAS EXAMEN ED1\MODELO 2 A PILA\prueba 54555\Examen1-SA-Resuelto-2022-main\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.csproj.CopyComplete
+C:\Users\HP\Downloads\PRACTCIAS EXAMEN ED1\MODELO 2 A PILA\prueba 54555\Examen1-SA-Resuelto-2022-main\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.exe
+C:\Users\HP\Downloads\PRACTCIAS EXAMEN ED1\MODELO 2 A PILA\prueba 54555\Examen1-SA-Resuelto-2022-main\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.pdb
+C:\Users\DCDS\Desktop\Ed ex1 1 2022 Diag2 SA\wApp\bin\x64\Test\wApp.exe.config
+C:\Users\DCDS\Desktop\Ed ex1 1 2022 Diag2 SA\wApp\bin\x64\Test\wApp.exe
+C:\Users\DCDS\Desktop\Ed ex1 1 2022 Diag2 SA\wApp\bin\x64\Test\wApp.pdb
+C:\Users\DCDS\Desktop\Ed ex1 1 2022 Diag2 SA\wApp\bin\x64\Test\cApp.dll
+C:\Users\DCDS\Desktop\Ed ex1 1 2022 Diag2 SA\wApp\bin\x64\Test\cApp.pdb
+C:\Users\DCDS\Desktop\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.csproj.AssemblyReference.cache
+C:\Users\DCDS\Desktop\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\DCDS\Desktop\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.fSpar.resources
+C:\Users\DCDS\Desktop\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.menu.resources
+C:\Users\DCDS\Desktop\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.Properties.Resources.resources
+C:\Users\DCDS\Desktop\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.csproj.GenerateResource.cache
+C:\Users\DCDS\Desktop\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.csproj.CoreCompileInputs.cache
+C:\Users\DCDS\Desktop\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.csproj.CopyComplete
+C:\Users\DCDS\Desktop\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.exe
+C:\Users\DCDS\Desktop\Ed ex1 1 2022 Diag2 SA\wApp\obj\x64\Test\wApp.pdb

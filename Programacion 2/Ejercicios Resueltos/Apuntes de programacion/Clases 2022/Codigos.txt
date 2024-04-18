@@ -1,0 +1,65 @@
+
+15/09
+
+byte PosMayor(TStringGrid *v,byte n)
+{
+   byte p;
+   if (n==0)
+	 throw new Exception("Error: Vector Vacio");
+	 else
+	 if (n==1)
+		p=0;
+	 else{
+		 p=PosMayor(v,n-1);
+		 if (StrToInt(v->Cells[p][0])<StrToInt(v->Cells[n-1][0])){
+			p=n-1;
+		 }
+	 }
+   return p;
+}
+
+void Selection_Sort(TStringGrid *v,byte n)
+{
+   if (n>1){
+	 byte pm=PosMayor(v,n);
+	 String x=v->Cells[n-1][0];
+	 v->Cells[n-1][0]=v->Cells[pm][0];
+	 v->Cells[pm][0]=x;
+	 Selection_Sort (v,n-1);
+   }
+}
+
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+	Selection_Sort (StringGrid1, StringGrid1->ColCount);
+}
+//---------------------------------------------------------------------------
+
+bool BusquedaBinaria(TStringGrid *v, int x, byte a, byte b)
+{
+   bool sw;
+   byte n=b-a+1;
+   if (n==0)
+		sw=false;
+   else if (n==1)
+		sw=(x==StrToInt(v->Cells[a][0]));
+   else{
+	   byte c=(a+b)/2;
+	   if (StrToInt(v->Cells[c][0]==x)
+			sw=true;
+	   else if (StrToInt(v->Cells[c][0])<x)
+			sw=BusquedaBinaria(v,x,c+1,b);
+	   else
+			sw=BusquedaBinaria(v,x,a,c-1);
+   }
+   return sw;
+}
+
+void __fastcall TForm1::Button2Click(TObject *Sender)
+{
+	Selection_Sort(StringGrid1,StringGrid1->ColCount);
+	if (BusquedaBinaria(StringGrid1,StrToInt(Edit1->Text),0,StringGrid1->ColCount-1))
+		ShowMessage("Si Existe el dato en el vector");
+	else
+		ShowMessage("No Existe el dato en el vector");
+}

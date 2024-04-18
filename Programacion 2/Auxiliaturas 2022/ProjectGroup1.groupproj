@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{E5CCB1BE-6DFB-4A11-B86E-F6147CD07DA1}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\Apuntes de programacion\Auxiliaturas.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Project1.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Auxiliaturas">
+        <MSBuild Projects="..\Apuntes de programacion\Auxiliaturas.cbproj"/>
+    </Target>
+    <Target Name="Auxiliaturas:Clean">
+        <MSBuild Projects="..\Apuntes de programacion\Auxiliaturas.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Auxiliaturas:Make">
+        <MSBuild Projects="..\Apuntes de programacion\Auxiliaturas.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Project1">
+        <MSBuild Projects="Project1.cbproj"/>
+    </Target>
+    <Target Name="Project1:Clean">
+        <MSBuild Projects="Project1.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project1:Make">
+        <MSBuild Projects="Project1.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Auxiliaturas;Project1"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Auxiliaturas:Clean;Project1:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Auxiliaturas:Make;Project1:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

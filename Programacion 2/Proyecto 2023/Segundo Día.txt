@@ -1,0 +1,91 @@
+Codigo    Nombre     Direccion    Fecha
+120       Juan       C1           2-1-95
+130       Pedro      C2           4-2-98
+140       Maria      C3           7-2-00
+150      Josefa      C4           8-2-02
+160      Roberto     C5           10-10-10
+170      Betty       C6           2-2-04
+180      Mary        C7           5-6-07
+
+1. >>>Proceso para generar un listado ("listado.txt") de los que cumplen años un dia como hoy.
+Ejemplo: dia= 2  (suponiendo que hoy es 2)
+  Juan     2-1-95
+  Betty    2-2-04
+
+
+void Listado(AnsiString nom, byte dia) {
+	RegAlumno reg;
+	byte diaReg;
+	int i = 1;
+	fstream fi(nom.c_str(),ios::in|ios::binary);
+	ofstream fo("listado.txt");
+	AnsiString aux = "-Nombre ------------ Fecha-";
+	if (!fi.fail()) {
+		while (i <= aux.Length()) {
+			fo.put(aux[i]);
+			i++;
+		}
+		while (!fi.eof()) {
+			fi.read((char*)&reg, sizeof(reg));
+			if (!fi.eof() && reg.marca != 1) {
+				diaReg = reg.fecha.dia;
+				if (diaReg == dia) {
+					aux="\n"+AnsiString(reg.nom)+"--------"+reg.fecha.dia+"/"
+					+reg.fecha.mes+"/"+reg.fecha.año;
+					i = 1;
+					while (i <= aux.Length()) {
+						fo.put(aux[i]);
+						i++;
+					}
+				}
+			}
+		}
+	}
+	fi.close();
+	fo.close();
+}
+
+
+
+
+Codigo    Nombre     Direccion    Fecha
+120       Juan       C1           2-1-95
+130       Pedro      C2           4-2-98
+140       Maria      C3           7-2-00
+150      Josefa      C4           8-2-02
+160      Roberto     C JAZmin           10-10-10
+170      Betty       C6           2-2-04
+180      Mary        C2         5-6-07
+
+2. >>>Funcion que devuelva el codigo a partir de una direccion:  
+(independientemente si esta con mayuscula o minuscula en el texto, tiene que encontrarlo.
+Si hay mas con la misma calle estara el primero que pille)
+
+Ejemplo dir= "jazmin" => 160
+        dir= "asusena" => 0  (porque no se encuentra)
+        dir= "c2"=>130 (existen 2 pero escoje al primero que pille)
+
+
+Word BuscarDir(AnsiString nom, AnsiString dir) {
+	RegAlumno reg;
+	ifstream fi(nom.c_str(), ios::in | ios::binary);
+	AnsiString aux;
+	Word cod = 0;
+	bool b = true;
+	if (!fi.fail()) {
+		while (!fi.eof()) {
+			fi.read((char*)&reg, sizeof(reg));
+			if (!fi.eof() && reg.marca != 1) {
+				dir = dir.LowerCase();
+				aux = reg.dir;
+				aux = aux.LowerCase();
+				if (aux == dir && b) {
+					cod = reg.cod;
+					b = false;
+				}
+			}
+		}
+	}
+	return cod;
+}
+

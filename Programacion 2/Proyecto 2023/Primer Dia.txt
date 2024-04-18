@@ -1,0 +1,87 @@
+1) Search & Replace
+
+void actualizar(AnsiString nomArch, AnsiString ant, AnsiString nuevo) {
+	ifstream fi(nomArch.c_str());
+	ofstream fo("temporal.tmp");
+	int i;
+	char x;
+	AnsiString cad = "";
+	AnsiString cad2;
+	AnsiString cad3 = "";
+	if (!fi.fail()) {
+		while (!fi.eof()) {
+			x = fi.get();
+			if (!fi.eof()){
+				cad = cad + x;
+			}
+		}
+	}
+	i =1;
+	while(i<=cad.Length()){
+		cad2 = cad.SubString(i, ant.Length());
+		cad3 = cad3 + cad[i];
+		if (cad2 == ant) {
+			cad3 = cad3.SubString(1, cad3.Length() - 1) + nuevo;
+			i = i + ant.Length()-1;
+		}
+		i++;
+	}
+	i = 1;
+	while(i<=cad3.Length()){
+		fo.put(cad3[i]);
+		i++;
+	}
+
+	fi.close();
+	fo.close();
+	remove(nomArch.c_str());
+	rename("temporal.tmp", nomArch.c_str());
+
+}
+
+
+2) De cada palabra de un archivo modificar la ultima letra convirtiendola en mayusculas
+
+bool separador(char c){
+	AnsiString s = "-, ;+.";
+	return s.Pos(c)>0;
+}
+
+void MayusculaFin(AnsiString nomArch) {
+	ifstream fi(nomArch.c_str());
+	ofstream fo("temporal.tmp");
+	int i;
+	char x;
+	AnsiString cad = "";
+	AnsiString cad2 = "";
+	if (!fi.fail()) {
+		while (!fi.eof()) {
+			x = fi.get();
+			if (!fi.eof()){
+				cad = cad + x;
+			}
+		}
+	}
+	i=1;
+	while( i <= cad.Length()) {
+		if(cad[i] == 10 || separador(cad[i])){
+			cad2=cad2.Delete(cad2.Length(),1)+UpCase(cad[i-1])+cad[i];
+		}else{
+			cad2=cad2+cad[i];
+		}
+		i++;
+	}
+	char c = UpCase(cad2[cad2.Length()]);
+	cad2=cad2.Delete(cad2.Length()-1,1)+c;
+	i = 1;
+	while(i <= cad2.Length()){
+		fo.put(cad2[i]);
+		i++;
+	}
+	fi.close();
+	fo.close();
+	remove(nomArch.c_str());
+	rename("temporal.tmp", nomArch.c_str());
+}
+
+ 

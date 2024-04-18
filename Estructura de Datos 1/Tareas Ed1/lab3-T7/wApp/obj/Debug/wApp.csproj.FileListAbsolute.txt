@@ -1,0 +1,32 @@
+D:\TDA Listas\wApp\bin\Debug\wApp.exe
+D:\TDA Listas\wApp\bin\Debug\wApp.pdb
+D:\TDA Listas\wApp\obj\Debug\wApp.csproj.AssemblyReference.cache
+D:\TDA Listas\wApp\obj\Debug\wApp.Form1.resources
+D:\TDA Listas\wApp\obj\Debug\wApp.Properties.Resources.resources
+D:\TDA Listas\wApp\obj\Debug\wApp.csproj.GenerateResource.cache
+D:\TDA Listas\wApp\obj\Debug\wApp.csproj.CoreCompileInputs.cache
+D:\TDA Listas\wApp\obj\Debug\wApp.exe
+D:\TDA Listas\wApp\obj\Debug\wApp.pdb
+D:\TDA Listas\wApp\obj\Debug\wApp.LisCola.resources
+D:\TDA Listas\wApp\obj\Debug\wApp.LisPila.resources
+D:\TDA Listas\wApp\obj\Debug\wApp.LisPoly.resources
+D:\TDA Listas\wApp\bin\Debug\cApp.dll
+D:\TDA Listas\wApp\bin\Debug\cApp.pdb
+D:\TDA Listas\wApp\obj\Debug\wApp.csproj.CopyComplete
+C:\Users\DCDS\Desktop\lab3-T7\wApp\bin\Debug\wApp.exe.config
+C:\Users\DCDS\Desktop\lab3-T7\wApp\bin\Debug\wApp.exe
+C:\Users\DCDS\Desktop\lab3-T7\wApp\bin\Debug\wApp.pdb
+C:\Users\DCDS\Desktop\lab3-T7\wApp\bin\Debug\cApp.dll
+C:\Users\DCDS\Desktop\lab3-T7\wApp\bin\Debug\cApp.pdb
+C:\Users\DCDS\Desktop\lab3-T7\wApp\obj\Debug\wApp.csproj.AssemblyReference.cache
+C:\Users\DCDS\Desktop\lab3-T7\wApp\obj\Debug\wApp.csproj.SuggestedBindingRedirects.cache
+C:\Users\DCDS\Desktop\lab3-T7\wApp\obj\Debug\wApp.Form1.resources
+C:\Users\DCDS\Desktop\lab3-T7\wApp\obj\Debug\wApp.LisCola.resources
+C:\Users\DCDS\Desktop\lab3-T7\wApp\obj\Debug\wApp.LisPila.resources
+C:\Users\DCDS\Desktop\lab3-T7\wApp\obj\Debug\wApp.LisPoly.resources
+C:\Users\DCDS\Desktop\lab3-T7\wApp\obj\Debug\wApp.Properties.Resources.resources
+C:\Users\DCDS\Desktop\lab3-T7\wApp\obj\Debug\wApp.csproj.GenerateResource.cache
+C:\Users\DCDS\Desktop\lab3-T7\wApp\obj\Debug\wApp.csproj.CoreCompileInputs.cache
+C:\Users\DCDS\Desktop\lab3-T7\wApp\obj\Debug\wApp.csproj.CopyComplete
+C:\Users\DCDS\Desktop\lab3-T7\wApp\obj\Debug\wApp.exe
+C:\Users\DCDS\Desktop\lab3-T7\wApp\obj\Debug\wApp.pdb

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/09/10 14:11:57.000.794,=C:\Users\Jose Daniel\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2019/09/10 14:11:57.000.973,=C:\Users\Jose Daniel\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2019/09/10 15:13:19.000.833,C:\Users\Jose Daniel\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\Jose Daniel\Desktop\Program 2\modelos de examense\Unit1.dfm</Transaction>
+    <Transaction>2019/09/10 15:13:19.000.833,C:\Users\Jose Daniel\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\Users\Jose Daniel\Desktop\Program 2\modelos de examense\Unit1.h</Transaction>
+    <Transaction>2019/09/10 15:13:19.000.833,C:\Users\Jose Daniel\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\Users\Jose Daniel\Desktop\Program 2\modelos de examense\Unit1.cpp</Transaction>
+    <Transaction>2019/09/10 15:13:27.000.430,C:\Users\Jose Daniel\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\Jose Daniel\Desktop\Program 2\modelos de examense\Project1PCH1.h</Transaction>
+    <Transaction>2019/09/10 15:13:29.000.491,C:\Users\Jose Daniel\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\Jose Daniel\Desktop\Program 2\modelos de examense\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,118 @@
+Desarrollar las siguientes actividades:
+
+1. Dado el Polinomio P(x)= 3x6+2x4+3 y el polinomio Q(x)=3x-1 cual es el resultado de aplicar las siguientes expresiones utilizando las Funciones y Axiomas del TAD Polinomio.
+
+Rem(P, 4) -> 3x6+3
+
+Rem(Attach(P,-8,5,),0) -> 3x6-8x5
+
+Iszero(Attach(P,0,0)) -> FALSE
+
+Smult(Zero,3,6) -> Zero
+
+Smult(Attach(P,2,2),1,1) -> 3x7-8x6+2x3
+
+Attach(Smult(P,1,1), 1*2, 2+1) -> 3x8-8x7+2x4+2x3
+
+Add( P, Zero ) -> 3x8-8x7+2x4+2x3
+
+Add(P,Attach( P,3,2)) -> 6x8-16x7+4x4+4x3+3x2
+
+Attach(Add(P,Q),3,2) -> 6x8-16x7+4x4+4x3+6x2+3x-1
+
+Mult(P,Zero) -> Zero
+
+Mult(P,Attach(Q,4-2,3)) -> Zero
+
+Add(Mult(P,Q),Smult(P,4-2,3) ->Zero
+
+P(X) = 
+Q(x) =
+
+
+
+
+2. Implementar en C# las siguientes operaciones del TAD Polinomios (clsPoly) en el proyecto de clases cApp
+
+Declare Zero() -> Poly //Define polinomio
+Public clsPoly Zero()
+{
+	return new clsPoly();
+}
+
+Iszero(Poly) -> Boolean //Esta vació el Polinomio
+
+Public bool IsZero()
+{
+	return (nterm == 0);
+}
+
+Coef(Poly, exp) -> coef //Obtiene el coef. del Polinomio
+
+Public float Coef(int exp)
+{
+	return vcoef[exp];
+}
+
+Attach(Poly, coef, exp) -> Poly //Adiciona un elemento al Polinomio
+
+Public clsPoly Attach(int coef, int exp)
+{
+	if ((coef != 0) && (exp >= 0)){
+		if (p.Vcoef[exp] == 0){
+			p.nterm++;
+		}
+		p.Vexp[exp] = exp;
+		p.Vcoef[exp] = p.Vcoef[exp] + coef;
+	}
+	return p;
+}
+
+Rem(Poly, exp) -> Poly //Elimina un elemento del Polinomio
+
+Public clsPoly Rem(int exp)
+{
+	if (exp >= 0){
+		p.Vcoef[exp] = 0;
+		p.Vexp[exp] = 0;
+		nterm--;
+	}
+	return p;
+}
+
+Add(Poly, Poly) ->Poly //Adición de Polinomios
+
+public clsPoly Add(clsPoly P,clsPoly Q)
+{
+   	clsPoly C = new clsPoly();
+     	while ((P.IsZero() == true && Q.IsZero() == true) == false){
+		if (P.Grado() < Q.Grado()){
+			C = Attach(C, Q.Coef(Q.Grado()), Q.Grado());
+			Q = Rem(Q, Q.Grado());
+		}
+		if (P.Grado() > Q.Grado()){
+			C = Attach(C, P.Coef(P.Grado()), P.Grado());
+			P = Rem(P, P.Grado());
+		}
+		if (P.Grado() == Q.Grado()){
+			C = Attach(C, P.Coef(P.Grado()) + Q.Coef(Q.Grado()), 
+			P.Grado());
+			P = Rem(P, P.Grado());
+			Q = Rem(Q,Q.Grado());
+		}
+	}
+     	return C;
+}
+
+Grado(Poly) -> N // Obtiene el grado de un Polinomio
+
+public int Grado()
+{
+   int Exp = 0;
+   for (int k = 0;k < MAX; k++){
+   	if (vExp[k] > 0){
+   		Exp = vExp[k];
+      }
+   }
+   return Exp;
+}

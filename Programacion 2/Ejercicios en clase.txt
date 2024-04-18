@@ -1,0 +1,31 @@
+/*Funcion que devuelva la suma de los elemntos de un vector
+  Ej: v[7,3,8,2,5]--> 25*/
+
+ //Menos el ultimo k=n-1
+
+/*int Suma(TStringGrid *v, byte n)
+{
+	int s;  //Caso Base
+	if (n==0)
+		s = 0;
+	else{ //caso general
+		s=Suma(v,n-1) + StrToInt(v->Cells[n-1][0]);
+	}
+	return s;
+}*/
+
+//Menos el primero k=n-1, no da NO SIRVE, tiene una contradicion
+
+/*int Suma(TStringGrid *v, byte n)
+{
+	int s;  //Caso Base
+	if (n==0)
+		s = 0;
+	else{ //caso general
+		s=Suma(v,n-1) + StrToInt(v->Cells[0][0]);
+	}
+	return s;
+}*/
+
+
+

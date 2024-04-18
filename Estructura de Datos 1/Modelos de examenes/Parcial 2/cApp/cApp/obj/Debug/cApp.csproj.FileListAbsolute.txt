@@ -1,0 +1,12 @@
+D:\Users\TheCrow\Documents\Universidad\semestre 4\ED1\Modelo de examen\Examen 2\cApp\cApp\bin\Debug\cApp.dll
+D:\Users\TheCrow\Documents\Universidad\semestre 4\ED1\Modelo de examen\Examen 2\cApp\cApp\bin\Debug\cApp.pdb
+D:\Users\TheCrow\Documents\Universidad\semestre 4\ED1\Modelo de examen\Examen 2\cApp\cApp\obj\Debug\cApp.csproj.AssemblyReference.cache
+D:\Users\TheCrow\Documents\Universidad\semestre 4\ED1\Modelo de examen\Examen 2\cApp\cApp\obj\Debug\cApp.csproj.CoreCompileInputs.cache
+D:\Users\TheCrow\Documents\Universidad\semestre 4\ED1\Modelo de examen\Examen 2\cApp\cApp\obj\Debug\cApp.dll
+D:\Users\TheCrow\Documents\Universidad\semestre 4\ED1\Modelo de examen\Examen 2\cApp\cApp\obj\Debug\cApp.pdb
+C:\Users\HP\Downloads\Telegram Desktop\ED1\Modelo de examen\Examen 2\cApp\cApp\bin\Debug\cApp.dll
+C:\Users\HP\Downloads\Telegram Desktop\ED1\Modelo de examen\Examen 2\cApp\cApp\bin\Debug\cApp.pdb
+C:\Users\HP\Downloads\Telegram Desktop\ED1\Modelo de examen\Examen 2\cApp\cApp\obj\Debug\cApp.csproj.AssemblyReference.cache
+C:\Users\HP\Downloads\Telegram Desktop\ED1\Modelo de examen\Examen 2\cApp\cApp\obj\Debug\cApp.csproj.CoreCompileInputs.cache
+C:\Users\HP\Downloads\Telegram Desktop\ED1\Modelo de examen\Examen 2\cApp\cApp\obj\Debug\cApp.dll
+C:\Users\HP\Downloads\Telegram Desktop\ED1\Modelo de examen\Examen 2\cApp\cApp\obj\Debug\cApp.pdb

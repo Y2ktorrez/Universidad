@@ -1,0 +1,10 @@
+Una persona necesita registrar los prestamos (Nro de prestamos, fecha, días) que realiza de sus objetos a otras personas, como ser Televisor, Libro, CD, etc. Solo presta un objeto en cada prestamo. Es necesario registrar algunos datos especificos de cada objeto. Ademas los objetos estan categorizados (es decir los objetos, pertenecen a una categoria especifica) y las categorias se pueden dividir en subcategoria.
+
+Diseñar una base de datps para almacenar esta informacion.
+
+IDENTIDICAR LAS CLASES
+
+Prestamos
+Objetos 
+Personas
+Categoria

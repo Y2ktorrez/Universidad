@@ -1,0 +1,111 @@
+******Algoritmos con Matrices****** 
+
+MaxC = Cantidad de Columnas reservadas
+MaxF = Cantidad de Filas reservadas
+m = Cantidad de filas con datos
+n = Cantidad de Columnas con datos
+fa = Fila inicial
+fb = Fila final
+ca = Columna Inicial
+cb = Columna final 
+
+1. Parametros m, n (cantidad de filas y columnas de la matriz)
+   se asume que fa=0,ca=0
+   por lo tanto las variables calculadas son fb=m-1,cb=n-1
+
+2. Parametros fa,fb,ca y cb (Posicion inicial y posicion final)
+   por lo tanto las variables calculadas son m=fb-fa+1, n=cb-ca+1
+
+3. Se puede hipotetizar sobre m (cantidad de filas a procesar)
+
+4. Se puede hipitetizar sobre n (cantidad de columnas a procesar)
+
+5. Se puede hipotetizar sobre ambas variables m y n 
+
+6. Se puede hipotetizar sobre el total de los dantos en la matriz
+
+
+Ej. Cargar una matriz randomicamente 
+
+***Por Fila***
+P0.
+   E: A, m, n
+   S: A
+
+P1.
+   VR = m(la cantidad de filas que mi algoritmo tiene que llenar)
+
+P2.
+   Dm = [0 , 255] U [0 , infinito[
+      = [0 , 255]
+
+P3. 
+   m=0 => (nada)
+
+P4.
+   k = n-1, menos la ultima fila 
+   
+
+***Por Columna***
+P0.
+   E: A, m, n
+   S: A
+
+P1.
+   VR = n(Cantidad de Columnas)
+
+P2.
+   Dm = [0 , 255] U [0 , infinito[
+      = [0 , 255]
+
+P3. 
+   n=0 => (nada) 
+
+P4.
+   k = n-1, menos la ultima Columna 
+
+
+
+***m y n***
+P0.
+   E: A, m, n
+   S: A
+
+P1.
+   VR = m,n
+
+P2.
+   Dm = [0 , 255] U [0 , infinito[
+      = [0 , 255]
+  
+   Dn = [0 , 255] U [0 , infinito[
+      = [0 , 255]
+
+P3.
+   m=0, n=0 (nada que hacer)
+
+P4.
+   k = m-1 , n-1 ; menos la ultima Fila y menos la ultima Columna
+   
+
+***K=m*n por Casillas***
+P0.
+   E: A, k, f, c    --> f y c(coodenada de una casilla)
+   S:
+
+P1.
+   VR = k (Cantidad de datos a colocar)
+
+P2.
+   Dk = [0 , 255] U [0 , infinito[
+      = [0 , 255]
+
+P3.
+   k=0 (no realizar nada)
+
+
+P4.
+   k = k - 1, menos la casilla (f, c)	 
+   
+
+

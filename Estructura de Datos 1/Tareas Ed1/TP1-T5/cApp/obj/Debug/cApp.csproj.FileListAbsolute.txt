@@ -1,0 +1,6 @@
+C:\Users\DCDS\Documents\Universidad-Semestre\Estructura de Datos 1\Tareas Ed1\TP1-T5\cApp\bin\Debug\cApp.dll
+C:\Users\DCDS\Documents\Universidad-Semestre\Estructura de Datos 1\Tareas Ed1\TP1-T5\cApp\bin\Debug\cApp.pdb
+C:\Users\DCDS\Documents\Universidad-Semestre\Estructura de Datos 1\Tareas Ed1\TP1-T5\cApp\obj\Debug\cApp.csproj.AssemblyReference.cache
+C:\Users\DCDS\Documents\Universidad-Semestre\Estructura de Datos 1\Tareas Ed1\TP1-T5\cApp\obj\Debug\cApp.csproj.CoreCompileInputs.cache
+C:\Users\DCDS\Documents\Universidad-Semestre\Estructura de Datos 1\Tareas Ed1\TP1-T5\cApp\obj\Debug\cApp.dll
+C:\Users\DCDS\Documents\Universidad-Semestre\Estructura de Datos 1\Tareas Ed1\TP1-T5\cApp\obj\Debug\cApp.pdb

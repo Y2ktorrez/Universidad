@@ -1,0 +1,54 @@
+//---------------------------------------------------------------------------
+
+#ifndef Unit1H
+#define Unit1H
+//---------------------------------------------------------------------------
+#include <System.Classes.hpp>
+#include <Vcl.Controls.hpp>
+#include <Vcl.StdCtrls.hpp>
+#include <Vcl.Forms.hpp>
+#include <Vcl.Menus.hpp>
+#include <Vcl.Grids.hpp>
+//---------------------------------------------------------------------------
+class TForm1 : public TForm
+{
+__published:	// IDE-managed Components
+	TMainMenu *MainMenu1;
+	TEdit *Edit1;
+	TEdit *Edit2;
+	TEdit *Edit3;
+	TMenuItem *Nmeros1;
+	TMenuItem *Nmeros2;
+	TMenuItem *SumaDigPrim1;
+	TMenuItem *SumaDigPrim2;
+	TMenuItem *Mayor1;
+	TMenuItem *ManorAlFinal1;
+	TMenuItem *Ordenar1;
+	TMenuItem *Cadenas1;
+	TMenuItem *Cadenas2;
+	TMenuItem *CantVocales1;
+	TMenuItem *Invertir1;
+	TMenuItem *ElimNoAlfabticos1;
+	TButton *Button1;
+	TStringGrid *StringGrid1;
+	TMenuItem *N11;
+	TMenuItem *BusBin1;
+	void __fastcall Nmeros2Click(TObject *Sender);
+	void __fastcall SumaDigPrim1Click(TObject *Sender);
+	void __fastcall SumaDigPrim2Click(TObject *Sender);
+	void __fastcall Mayor1Click(TObject *Sender);
+	void __fastcall ManorAlFinal1Click(TObject *Sender);
+	void __fastcall Ordenar1Click(TObject *Sender);
+	void __fastcall CantVocales1Click(TObject *Sender);
+	void __fastcall Invertir1Click(TObject *Sender);
+	void __fastcall ElimNoAlfabticos1Click(TObject *Sender);
+	void __fastcall Button1Click(TObject *Sender);
+	void __fastcall N11Click(TObject *Sender);
+private:	// User declarations
+public:		// User declarations
+	__fastcall TForm1(TComponent* Owner);
+};
+//---------------------------------------------------------------------------
+extern PACKAGE TForm1 *Form1;
+//---------------------------------------------------------------------------
+#endif

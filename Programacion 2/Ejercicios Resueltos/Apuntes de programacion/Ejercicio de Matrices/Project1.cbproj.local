@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/08/01 11:11:47.000.133,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2022/08/01 11:11:49.000.609,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2022/08/01 11:14:16.000.132,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2022/08/01 11:14:18.000.635,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2022/10/01 19:20:37.000.390,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2022/10/01 19:20:37.000.209,=C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2022/10/01 19:59:15.000.082,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\Users\pc\Desktop\parcial\Unit1.h</Transaction>
+    <Transaction>2022/10/01 19:59:15.000.082,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\pc\Desktop\parcial\Unit1.dfm</Transaction>
+    <Transaction>2022/10/01 19:59:15.000.082,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\Users\pc\Desktop\parcial\Unit1.cpp</Transaction>
+    <Transaction>2022/10/01 19:59:17.000.249,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\pc\Desktop\parcial\Project1PCH1.h</Transaction>
+    <Transaction>2022/10/01 19:59:18.000.755,C:\Users\pc\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\pc\Desktop\parcial\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

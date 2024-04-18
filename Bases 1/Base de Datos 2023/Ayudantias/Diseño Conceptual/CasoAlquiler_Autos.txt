@@ -1,0 +1,15 @@
+Se pide diseñar una base de datos para la gestion de una empresa que se dedica al alquiler de autos.
+El funcionamiento de la empresa es el siguiente:
+Para birndar el alquiler de uno o más autos a una persona se registran los siguientes datos: carnet de identidad, nombre, telefono, correo y direccion. Ademas, la manera de registrar los detalles de un alquiler es atraves de una nota de alquiler donde se registram el NRO de nota, la fecha que se presta el auto, la fecha que se tiene que devolver y el monto, la nota de alquiler puede dar acceso a mas de un auto.
+La empresa maneja un registro de los autos, donde anota el numero de planca, el color, la marca, el modelo. Tambien se debe tener el registro del nivel del tanque de cada auto al momento que se alquila.
+
+
+IDENTIFICAR LAS CLASES:
+
+Cliente: carnet de identidad, nombre, telefono, correo y direccion 
+
+Nota_Alquiler: nro nota, la fecha que se presenta el auto, la fecha que se tiene que devolver  
+
+Auto: anota el numero de placa,  color, la marca, el modelo 
+
+

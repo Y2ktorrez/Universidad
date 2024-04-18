@@ -1,0 +1,456 @@
+
+/*Escribir una funcion que devuelva la palabra mas larga de una cadena
+  Ej. CadenaMasLarga("Esta es una prueba mas") -> "prueba"*/
+
+String PalabraMasLarga(String x )
+{
+  String PalabraLarga;
+  x = x.Trim();
+  byte n = x.Length();
+  if (n == 0) {
+	PalabraLarga = "";
+  } else {
+	byte p = x.LastDelimiter(' ');
+	String UltimaPalabra = x.SubString(p+1, n-p);
+	ShowMessage(UltimaPalabra);
+	x.SetLength(p - 1);
+	PalabraLarga = PalabraMasLarga(x);
+	if (UltimaPalabra.Length() > PalabraLarga.Length()) {
+		PalabraLarga = UltimaPalabra;
+	}
+  }
+  return PalabraLarga;
+}
+
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+	String cadena = Edit1->Text;
+	Edit2->Text = PalabraMasLarga(cadena);
+}
+
+
+/*Escribir una funcion que devuelva una cadena formada por los
+  digitos de un numero repetidos la cantidad de veces que el
+  digito representa, max 2 funciones.
+  Ej. CadDeDig(5021)->"55555221"*/
+
+String CadDeDig(Cardinal n)
+{
+	String s;
+	if(n==0){
+	  s="";
+	}else{
+	   s=CadDeDig(n/10);
+	   if (n%10>0){
+		 Cardinal p=(n%10)*((pow10(n%10)-1)/9);
+		 s=s+p;
+	   }
+	}
+	return s;
+}
+
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+   Cardinal n=StrToInt(Edit1->Text);
+   Edit2->Text=CadDeDig(n);
+}
+
+/*Escribir una funcion que sume los numeros de una cadena
+  Ej. SumaNumeros("20Hola 10Como")->30*/
+
+bool  EsDigito(wchar_t x)
+{
+   String nro="0123456789";
+   return nro.Pos(x)>0;
+}
+
+String UltimoNro(String cad)
+{
+   String r;
+   if (cad==""){
+	  r="";
+   }else{
+	   wchar_t x=cad[cad.Length()];
+	   cad.SetLength(cad.Length()-1);
+	   if (!EsDigito(x)){
+		 r=UltimoNro(cad);
+	   }else{
+		   if ((cad!="")&&EsDigito(cad[cad.Length()])){
+			  r=UltimoNro(cad)+ String(x);
+		   }else{
+			   r=(String)x;
+		   }
+	   }
+   }
+   return r;
+}
+
+Cardinal SumaNumeros(String cad)
+{
+	Cardinal nro;
+	if (cad==""){
+	  nro=0;
+	}else{
+		String ultNro=UltimoNro(cad);
+		if (ultNro==""){
+		  nro=0;
+		}else{
+			byte p=cad.LastDelimiter(ultNro);
+			cad.SetLength(p-ultNro.Length()-1);
+			nro=StrToInt(ultNro)+SumaNumeros(cad);
+		}
+	}
+	return nro;
+}
+
+
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+   Edit2->Text=SumaNumeros(Edit1->Text);
+}
+
+
+
+
+
+//vaciar una matriz //
+void eliminarf(TStringGrid *v,byte fa, byte fb, byte ca,byte cb)
+{   byte n= cb-ca+1;
+	if (n>0){
+			v->Cells[ca][fa]="";
+			eliminarf(v,fa,fb,ca+1,cb);}
+}
+
+
+void eliminarc(TStringGrid *v,byte fa, byte fb, byte ca,byte cb)
+{	byte m=fb-fa+1;
+	if (m>0){
+		eliminarf(v,fa,fb,ca,cb);
+		eliminarc(v,fa+1,fb,ca,cb);}
+}
+
+
+void __fastcall TForm1::Button3Click(TObject *Sender)
+{  eliminarc(StringGrid1,0,StringGrid1->RowCount ,0,StringGrid1->ColCount );
+	StringGrid1->ColCount =1;
+	StringGrid1->RowCount =1;
+}
+
+
+
+//matris superior
+
+void CargarF(TStringGrid *v, byte fa, byte fb, byte ca, byte cb, byte &k)
+{
+  byte m=cb-ca+1;
+  if (m>0){
+	v->Cells[ca][fa]=k;
+	k++;
+	CargarF(v,fa,fb,ca+1,cb,k);
+  }
+}
+
+void TriangularSup(TStringGrid *v,byte fa,byte fb,byte ca,byte cb,byte &k)
+{
+   byte n=fb-fa+1;
+   if (n>0){
+	   CargarF(v,fa,fb,ca,cb,k);
+	   TriangularSup(v,fa+1,fb,ca+1,cb,k);
+   }
+}
+
+
+void __fastcall TForm1::cargartriangularsuperior1Click(TObject *Sender)
+{eliminarc(StringGrid1,0,StringGrid1->RowCount ,0,StringGrid1->ColCount );
+	  byte m=StrToInt(InputBox("","","5"));
+          StringGrid1->RowCount =m ;
+          StringGrid1->ColCount =m;
+          byte k=1;
+          triangulars(StringGrid1,0,m-1,0,m-1,k);
+}
+
+//matriz espiral
+
+void llenarf1(TStringGrid *a,byte fa,byte ca,byte cb,byte &k)
+{
+	if (cb>=ca) {
+			 a->Cells [ca][fa]=k++;
+			 llenarf1(a,fa,ca+1,cb,k); }
+}
+
+void llenarc2(TStringGrid *a,byte cb,byte fa,byte fb,byte &k)
+{
+	if (fb>=fa) {
+			 a->Cells [cb][fa]=k++;
+			 llenarc2(a,cb,fa+1,fb,k); }
+}
+void llenarf2(TStringGrid *a,byte fb,byte ca,byte cb,byte &k)
+{
+	if (cb>ca) {
+			a->Cells [cb][fb]=k++;
+			llenarf2(a,fb,ca,cb-1,k); }
+}
+void llenarc1(TStringGrid *a,byte ca,byte fa,byte fb,byte &k)
+{
+	if (fb>fa) {
+			a->Cells [ca][fb]=k++;
+			llenarc1(a,ca,fa,fb-1,k); }
+}
+
+typedef TStringGrid mat;
+void cargarespi(mat *a,byte fa, byte fb, byte ca, byte cb,byte &k)
+{ byte m=fb-fa+1;
+byte n=cb-ca+1;
+	if (m*n>0) {//caso base m=0 o n=0
+		if (m*n==1) //2do caso base
+			a->Cells[ca][fb]=k;
+		else {//caso general
+		llenarf1(a,fa,ca,cb,k);//k= dato inicial
+		llenarc2(a,cb,fa+1,fb,k);
+		llenarf2(a,fb,ca,cb-1,k);
+		llenarc1(a,ca,fa,fb,k);
+
+		cargarespi(a,fa+1,fb-1,ca+1,cb-1,k);
+		}
+	}
+}
+void __fastcall TForm1::cargarespiral1Click(TObject *Sender)
+{ eliminarc(StringGrid1,0,StringGrid1->RowCount ,0,StringGrid1->ColCount );
+byte m=StrToInt(InputBox("","","5"));
+StringGrid1->RowCount =m;
+StringGrid1->ColCount =m;
+byte k=1;
+cargarespi(StringGrid1,0,m-1,0,m-1,k);
+}
+
+
+//triangular inf
+void cargarfil(TStringGrid *v,byte fa,byte fb,byte ca,byte cb,byte &k)
+{
+	byte m=fb-fa +1;
+	if (m>0) {
+		v->Cells [ca][fa]=k;
+		k++;
+		cargarfil(v,fa+1,fb,ca,cb,k);
+	}
+}
+void triangulari(TStringGrid *v,byte fa,byte fb,byte ca,byte cb,byte &k)
+{
+	byte n= cb-ca +1;
+	if (n>0) {
+		cargarfil(v,fa,fb,ca,cb,k);
+		triangulari(v,fa+1,fb,ca+1,cb,k);
+	}
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::cargartriangularinferior1Click(TObject *Sender)
+{  eliminarc(StringGrid1,0,StringGrid1->RowCount ,0,StringGrid1->ColCount );
+byte m=StrToInt(InputBox("","","5"));
+StringGrid1->RowCount =m ;
+StringGrid1->ColCount =m;
+byte k=1;
+triangulari(StringGrid1,0,m-1,0,m-1,k);
+}
+
+
+//cargar triangular superior 2.0
+void cargarfil3(TStringGrid *v,byte fa,byte fb,byte ca,byte cb,byte &k)
+{
+	byte m=fb -fa+1;
+	if (m>0) {
+		v->Cells [cb][fb]=k;
+		k++;
+		cargarfil3(v,fa,fb-1,ca,cb,k);
+	}
+}
+void cargarfil22(TStringGrid *v,byte fa,byte fb,byte ca,byte cb,byte &k)
+{
+	byte n=cb -ca +1;
+	if (n>0) {
+		cargarfil3(v,fa,fb,ca,cb,k);
+		cargarfil22(v,fa,fb-1,ca,cb-1,k);
+	}
+}
+void __fastcall TForm1::triangularsuperior201Click(TObject *Sender)
+{ eliminarc(StringGrid1,0,StringGrid1->RowCount ,0,StringGrid1->ColCount );
+byte m=StrToInt(InputBox("","","5"));
+StringGrid1->RowCount =m ;
+StringGrid1->ColCount =m;
+byte k=1;
+cargarfil22(StringGrid1,0,m-1,0,m-1,k);
+}
+
+
+
+
+
+//1111111
+//244443
+//25773
+//2563
+//253
+//23
+//2
+void LlenaTriangEsp(TStringGrid *A, Word fa, Word fb, Word ca, Word cb, Word k){
+   byte n=cb-ca+1;
+if (n>0) {
+A->Cells[cb][fa]=k;
+LlenaTriangEsp(A,fa,fb,ca,cb-1,k);
+}
+}
+void Llena1TriangEsp(TStringGrid *A, Word fa, Word fb, Word ca, Word cb, Word k){
+byte n=fb-fa+1;
+if (n>0) {
+A->Cells[ca][fa]=k;
+Llena1TriangEsp(A,fa+1,fb,ca,cb,k);
+}
+}
+void Llena2TriangEsp(TStringGrid *A, Word fa, Word fb, Word ca, Word cb, Word k){
+byte n=cb-ca+1;
+if (n>0) {
+A->Cells[ca][fb]=k;
+Llena2TriangEsp(A,fa,fb-1,ca+1,cb,k);
+}
+}
+void TriangEsp(TStringGrid *A, Word fa, Word fb, Word ca, Word cb, Word &k){
+byte n=(A->ColCount %2==0)?0:1;
+if (fa<cb) {
+LlenaTriangEsp(A,fa,fb,ca,cb,k);
+k++;
+Llena1TriangEsp(A,fa+1,fb,ca,cb,k);
+k++;
+Llena2TriangEsp(A,fa+1,fb-1,ca+1,cb-1,k);
+k++;
+TriangEsp(A,fa+1,fb-2,ca+1,cb-2,k);
+}
+}
+
+void __fastcall TForm1::matrizcaracoltriangular1Click(TObject *Sender)
+{
+	 byte m=StrToInt(InputBox("","Inserte la cantidad de filas y columnas",""));
+StringGrid1->RowCount=m;
+StringGrid1->ColCount=m;
+Word k=1;
+TriangEsp(StringGrid1,0,m-1,0,m-1,k);
+}
+
+
+
+//practicando modelos de examenes 2/2020
+
+//pregunta 1 matriz
+
+//45678
+//34567
+//23456
+//12345
+void Cargar_Fila(TStringGrid*m,byte f,byte ca,byte cb,byte k){
+	byte n=cb-ca+1;
+	if (n>0) {
+		m->Cells [ca][f]=k;
+		Cargar_Fila(m,f,ca+1,cb,k+1);
+	}
+}
+void Matrizmod1(TStringGrid*m,byte fa,byte fb,byte ca,byte cb,byte &k){
+	byte n=fb-fa+1;
+	if (n>0) {
+		Cargar_Fila(m,fb,ca,cb,k);
+		k++;
+		Matrizmod1(m,fa,fb-1,ca,cb,k);
+		}
+}
+
+void __fastcall TForm1::cargarmatrizcortesdiagonales1Click(TObject *Sender)
+{
+
+	byte m=StrToInt(InputBox("","",""));
+	StringGrid1->ColCount =m;
+	StringGrid1->RowCount =m;
+	byte k=1;
+  Matrizmod1(StringGrid1,0,m-1,0,m-1,k);
+}
+
+
+
+
+
+
+
+ESTUDIAR
+
+String Repetir (Byte x,Byte y)
+{
+	String r;
+	if (x==1){
+		if (y==0)
+			r="";
+		else
+			r=StrToInt(y);
+	}else{
+		r=Repetir(x-1,y);
+			if (y!=0)
+				r=r+StrToInt(y);
+	}
+	return r;
+}
+String Llamado (Cardinal x)
+{
+	String r="";
+		if (x<10)
+		{
+			r=Repetir(x,x);
+		}else{
+			Byte n=x%10;
+			x=x/10;
+			r=Llamado(x);
+				r=r+Repetir(n,n);
+		}
+	return r;
+}
+
+
+
+void CargarNum (TStringGrid *v,Cardinal y)
+{              //4	27	77	81  vacio
+	if (y<100){
+		v->Cells[v->ColCount-1][0]=y;
+		v->ColCount++;
+	}else{
+		byte n=y%100;
+		y=y/100;
+		CargarNum(v,y);
+			v->Cells[v->ColCount-1][0]=n;
+			v->ColCount++;//v->ColCount=v->ColCount+1;
+	}
+}
+void __fastcall TForm1::ButtonGroup2Items11Click(TObject *Sender)
+{
+	StringGrid1->ColCount=1;
+	Cardinal x=StrToInt(Edit4->Text);
+	CargarNum(StringGrid1,x);
+	StringGrid1->ColCount--;
+}
+
+Marca Peñaranda Carlos Diego00:31
+void CargarPalabra (TStringGrid *v,AnsiString x)
+{
+	Byte c=x.Length();
+	x=x.Trim();
+	byte p=x.LastDelimiter(' ');
+	if (p==0)
+	{
+		AnsiString letras=x.SubString(1,2);
+			v->Cells[v->ColCount-1][0]=letras;
+			v->ColCount++;
+	}else{
+		AnsiString pal=x.SubString(p+1,c-p);
+		x.Delete(p+1,c-p);
+		CargarPalabra (v,x);
+			AnsiString letras=pal.SubString(1,2);
+			v->Cells[v->ColCount-1][0]=letras;
+			v->ColCount++;
+	}
+}
+
+LLAMADO ESTA EN EL VIDEO

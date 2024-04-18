@@ -1,0 +1,68 @@
+D:\EDI\ED v0\AppCon\vApp\bin\Debug\netcoreapp3.1\vApp.exe
+D:\EDI\ED v0\AppCon\vApp\bin\Debug\netcoreapp3.1\vApp.deps.json
+D:\EDI\ED v0\AppCon\vApp\bin\Debug\netcoreapp3.1\vApp.runtimeconfig.json
+D:\EDI\ED v0\AppCon\vApp\bin\Debug\netcoreapp3.1\vApp.runtimeconfig.dev.json
+D:\EDI\ED v0\AppCon\vApp\bin\Debug\netcoreapp3.1\vApp.dll
+D:\EDI\ED v0\AppCon\vApp\bin\Debug\netcoreapp3.1\vApp.pdb
+D:\EDI\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\EDI\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.AssemblyInfoInputs.cache
+D:\EDI\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.AssemblyInfo.cs
+D:\EDI\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.csproj.CoreCompileInputs.cache
+D:\EDI\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.dll
+D:\EDI\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.pdb
+D:\EDI\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.genruntimeconfig.cache
+C:\Users\DCDS\Desktop\ED v0\AppCon\vApp\bin\Debug\netcoreapp3.1\vApp.exe
+C:\Users\DCDS\Desktop\ED v0\AppCon\vApp\bin\Debug\netcoreapp3.1\vApp.deps.json
+C:\Users\DCDS\Desktop\ED v0\AppCon\vApp\bin\Debug\netcoreapp3.1\vApp.runtimeconfig.json
+C:\Users\DCDS\Desktop\ED v0\AppCon\vApp\bin\Debug\netcoreapp3.1\vApp.runtimeconfig.dev.json
+C:\Users\DCDS\Desktop\ED v0\AppCon\vApp\bin\Debug\netcoreapp3.1\vApp.dll
+C:\Users\DCDS\Desktop\ED v0\AppCon\vApp\bin\Debug\netcoreapp3.1\vApp.pdb
+C:\Users\DCDS\Desktop\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.csproj.AssemblyReference.cache
+C:\Users\DCDS\Desktop\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DCDS\Desktop\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.AssemblyInfoInputs.cache
+C:\Users\DCDS\Desktop\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.AssemblyInfo.cs
+C:\Users\DCDS\Desktop\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.csproj.CoreCompileInputs.cache
+C:\Users\DCDS\Desktop\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.dll
+C:\Users\DCDS\Desktop\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.pdb
+C:\Users\DCDS\Desktop\ED v0\AppCon\vApp\obj\Debug\netcoreapp3.1\vApp.genruntimeconfig.cache
+C:\Users\DCDS\Desktop\Tareas Ed1\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.csproj.AssemblyReference.cache
+C:\Users\DCDS\Desktop\Tareas Ed1\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DCDS\Desktop\Tareas Ed1\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.AssemblyInfoInputs.cache
+C:\Users\DCDS\Desktop\Tareas Ed1\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.AssemblyInfo.cs
+C:\Users\DCDS\Desktop\Tareas Ed1\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.csproj.CoreCompileInputs.cache
+C:\Users\DCDS\Desktop\Tareas Ed1\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.dll
+C:\Users\DCDS\Desktop\Tareas Ed1\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.pdb
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\vApp - Copy\bin\Debug\netcoreapp3.1\vApp.exe
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\vApp - Copy\bin\Debug\netcoreapp3.1\vApp.deps.json
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\vApp - Copy\bin\Debug\netcoreapp3.1\vApp.runtimeconfig.json
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\vApp - Copy\bin\Debug\netcoreapp3.1\vApp.runtimeconfig.dev.json
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\vApp - Copy\bin\Debug\netcoreapp3.1\vApp.dll
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\vApp - Copy\bin\Debug\netcoreapp3.1\vApp.pdb
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\vApp - Copy\bin\Debug\netcoreapp3.1\cApp.dll
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\vApp - Copy\bin\Debug\netcoreapp3.1\cApp.pdb
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.csproj.AssemblyReference.cache
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.AssemblyInfoInputs.cache
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.AssemblyInfo.cs
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.csproj.CoreCompileInputs.cache
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.csproj.CopyComplete
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.dll
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.pdb
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.genruntimeconfig.cache
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\AppCon\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.csproj.AssemblyReference.cache
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\AppCon\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\AppCon\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.AssemblyInfoInputs.cache
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\AppCon\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.AssemblyInfo.cs
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\AppCon\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.csproj.CoreCompileInputs.cache
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\AppCon\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.dll
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\AppCon\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.pdb
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\AppCon\vApp - Copy\bin\Debug\netcoreapp3.1\vApp.exe
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\AppCon\vApp - Copy\bin\Debug\netcoreapp3.1\vApp.deps.json
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\AppCon\vApp - Copy\bin\Debug\netcoreapp3.1\vApp.runtimeconfig.json
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\AppCon\vApp - Copy\bin\Debug\netcoreapp3.1\vApp.runtimeconfig.dev.json
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\AppCon\vApp - Copy\bin\Debug\netcoreapp3.1\vApp.dll
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\AppCon\vApp - Copy\bin\Debug\netcoreapp3.1\vApp.pdb
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\AppCon\vApp - Copy\bin\Debug\netcoreapp3.1\cApp.dll
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\AppCon\vApp - Copy\bin\Debug\netcoreapp3.1\cApp.pdb
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\AppCon\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.csproj.CopyComplete
+C:\Users\DCDS\Desktop\Tareas Ed1\TP4-T0(Trabajo Practico)\AppCon\vApp - Copy\obj\Debug\netcoreapp3.1\vApp.genruntimeconfig.cache

@@ -1,0 +1,116 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 407
+  ClientWidth = 541
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu1
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Edit1: TEdit
+    Left = 128
+    Top = 32
+    Width = 281
+    Height = 31
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 128
+    Top = 80
+    Width = 281
+    Height = 31
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    Left = 128
+    Top = 128
+    Width = 281
+    Height = 31
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 2
+  end
+  object StringGrid1: TStringGrid
+    Left = 112
+    Top = 192
+    Width = 320
+    Height = 120
+    DefaultColWidth = 40
+    FixedCols = 0
+    FixedRows = 0
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goTabs, goFixedRowDefAlign]
+    ParentFont = False
+    TabOrder = 3
+  end
+  object MainMenu1: TMainMenu
+    Left = 40
+    Top = 32
+    object Numeros1: TMenuItem
+      Caption = 'Cadenas'
+      object CantDigParesDif1: TMenuItem
+        Caption = 'CantDigParesDif'
+        OnClick = CantDigParesDif1Click
+      end
+      object GetDigPares1: TMenuItem
+        Caption = 'GetDigPares'
+        OnClick = GetDigPares1Click
+      end
+      object GetDigPares2: TMenuItem
+        Caption = 'MayorMenor'
+        OnClick = GetDigPares2Click
+      end
+      object MayorMenor21: TMenuItem
+        Caption = 'MayorMenor2'
+        OnClick = MayorMenor21Click
+      end
+      object ElimPrimNum1: TMenuItem
+        Caption = 'ElimPrimNum'
+        OnClick = ElimPrimNum1Click
+      end
+      object PalMasLarga1: TMenuItem
+        Caption = 'PalMasLarga'
+        OnClick = PalMasLarga1Click
+      end
+      object MoverMenor1: TMenuItem
+        Caption = 'MoverMenor'
+        OnClick = MoverMenor1Click
+      end
+      object CadenaDeDig1: TMenuItem
+        Caption = 'CadenaDeDig'
+        OnClick = CadenaDeDig1Click
+      end
+      object SumaNum1: TMenuItem
+        Caption = 'SumaNum'
+        OnClick = SumaNum1Click
+      end
+    end
+  end
+end

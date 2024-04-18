@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/03/30 18:49:53.000.548,=C:\Users\DCDS\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2023/03/30 18:49:54.000.051,=C:\Users\DCDS\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2023/03/30 19:15:33.000.487,C:\Users\DCDS\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\DCDS\Documents\Universidad-Semestre\Programacion 2\Clases\Unit2.dfm</Transaction>
+    <Transaction>2023/03/30 19:15:33.000.487,C:\Users\DCDS\Documents\Embarcadero\Studio\Projects\Unit1.h=C:\Users\DCDS\Documents\Universidad-Semestre\Programacion 2\Clases\Unit2.h</Transaction>
+    <Transaction>2023/03/30 19:15:33.000.487,C:\Users\DCDS\Documents\Embarcadero\Studio\Projects\Unit1.cpp=C:\Users\DCDS\Documents\Universidad-Semestre\Programacion 2\Clases\Unit2.cpp</Transaction>
+    <Transaction>2023/03/30 19:15:43.000.744,C:\Users\DCDS\Documents\Embarcadero\Studio\Projects\Project1PCH1.h=C:\Users\DCDS\Documents\Universidad-Semestre\Programacion 2\Clases\Project2PCH1.h</Transaction>
+    <Transaction>2023/03/30 19:15:52.000.260,C:\Users\DCDS\Documents\Embarcadero\Studio\Projects\Project1.cbproj=C:\Users\DCDS\Documents\Universidad-Semestre\Programacion 2\Clases\Practicas.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

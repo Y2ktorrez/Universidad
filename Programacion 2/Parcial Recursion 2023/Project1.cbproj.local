@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/05/05 13:09:48.000.810,=C:\Users\DCDS\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2023/05/05 13:09:48.000.921,=C:\Users\DCDS\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2023/05/05 13:22:09.000.713,C:\Users\DCDS\Desktop\Parcial Recursion\Unit1.cpp=C:\Users\DCDS\Documents\Embarcadero\Studio\Projects\Unit1.cpp</Transaction>
+    <Transaction>2023/05/05 13:22:09.000.713,C:\Users\DCDS\Desktop\Parcial Recursion\Unit1.dfm=C:\Users\DCDS\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2023/05/05 13:22:09.000.713,C:\Users\DCDS\Desktop\Parcial Recursion\Unit1.h=C:\Users\DCDS\Documents\Embarcadero\Studio\Projects\Unit1.h</Transaction>
+    <Transaction>2023/05/05 13:22:11.000.449,C:\Users\DCDS\Desktop\Parcial Recursion\Project1PCH1.h=C:\Users\DCDS\Documents\Embarcadero\Studio\Projects\Project1PCH1.h</Transaction>
+    <Transaction>2023/05/05 13:22:12.000.616,C:\Users\DCDS\Desktop\Parcial Recursion\Project1.cbproj=C:\Users\DCDS\Documents\Embarcadero\Studio\Projects\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

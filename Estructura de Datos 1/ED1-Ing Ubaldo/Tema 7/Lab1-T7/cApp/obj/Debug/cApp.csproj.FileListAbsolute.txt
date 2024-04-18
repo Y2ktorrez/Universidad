@@ -1,0 +1,52 @@
+D:\EDI\cApp\obj\Debug\ResolveAssemblyReference.cache
+D:\EDI\cApp\bin\Debug\cApp.dll
+D:\EDI\cApp\bin\Debug\cApp.pdb
+D:\EDI\cApp\obj\Debug\cApp.dll
+D:\EDI\cApp\obj\Debug\cApp.pdb
+D:\EDI\ED v1\cApp\bin\Debug\cApp.dll
+D:\EDI\ED v1\cApp\bin\Debug\cApp.pdb
+D:\EDI\ED v1\cApp\obj\Debug\ResolveAssemblyReference.cache
+D:\EDI\ED v1\cApp\obj\Debug\cApp.dll
+D:\EDI\ED v1\cApp\obj\Debug\cApp.pdb
+D:\EDI\ED v2\cApp\bin\Debug\cApp.dll
+D:\EDI\ED v2\cApp\bin\Debug\cApp.pdb
+D:\EDI\ED v2\cApp\obj\Debug\ResolveAssemblyReference.cache
+D:\EDI\ED v2\cApp\obj\Debug\cApp.dll
+D:\EDI\ED v2\cApp\obj\Debug\cApp.pdb
+D:\EDI\ED v3\cApp\bin\Debug\cApp.dll
+D:\EDI\ED v3\cApp\bin\Debug\cApp.pdb
+D:\EDI\ED v3\cApp\obj\Debug\ResolveAssemblyReference.cache
+D:\EDI\ED v3\cApp\obj\Debug\cApp.dll
+D:\EDI\ED v3\cApp\obj\Debug\cApp.pdb
+D:\EDI\ED v4\cApp\bin\Debug\cApp.dll
+D:\EDI\ED v4\cApp\bin\Debug\cApp.pdb
+D:\EDI\ED v4\cApp\obj\Debug\ResolveAssemblyReference.cache
+D:\EDI\ED v4\cApp\obj\Debug\cApp.dll
+D:\EDI\ED v4\cApp\obj\Debug\cApp.pdb
+D:\EDI\ED v5\cApp\bin\Debug\cApp.dll
+D:\EDI\ED v5\cApp\bin\Debug\cApp.pdb
+D:\EDI\ED v5\cApp\obj\Debug\ResolveAssemblyReference.cache
+D:\EDI\ED v5\cApp\obj\Debug\cApp.dll
+D:\EDI\ED v5\cApp\obj\Debug\cApp.pdb
+D:\EDI\ED v6\cApp\bin\Debug\cApp.dll
+D:\EDI\ED v6\cApp\bin\Debug\cApp.pdb
+D:\EDI\ED v6\cApp\obj\Debug\ResolveAssemblyReference.cache
+D:\EDI\ED v6\cApp\obj\Debug\cApp.dll
+D:\EDI\ED v6\cApp\obj\Debug\cApp.pdb
+D:\EDI\ED v7\cApp\bin\Debug\cApp.dll
+D:\EDI\ED v7\cApp\bin\Debug\cApp.pdb
+D:\EDI\ED v7\cApp\obj\Debug\cApp.dll
+D:\EDI\ED v7\cApp\obj\Debug\cApp.pdb
+D:\EDI\ED v8\cApp\bin\Debug\cApp.dll
+D:\EDI\ED v8\cApp\bin\Debug\cApp.pdb
+D:\EDI\ED v8\cApp\obj\Debug\ResolveAssemblyReference.cache
+D:\EDI\ED v8\cApp\obj\Debug\cApp.dll
+D:\EDI\ED v8\cApp\obj\Debug\cApp.pdb
+D:\EDI\ED v7\cApp\obj\Debug\cApp.csproj.CoreCompileInputs.cache
+D:\EDI\ED v7\cApp\obj\Debug\cApp.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Downloads\ED v7\cApp\bin\Debug\cApp.dll
+C:\Users\USUARIO\Downloads\ED v7\cApp\bin\Debug\cApp.pdb
+C:\Users\USUARIO\Downloads\ED v7\cApp\obj\Debug\cApp.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Downloads\ED v7\cApp\obj\Debug\cApp.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Downloads\ED v7\cApp\obj\Debug\cApp.dll
+C:\Users\USUARIO\Downloads\ED v7\cApp\obj\Debug\cApp.pdb

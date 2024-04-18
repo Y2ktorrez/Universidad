@@ -1,0 +1,449 @@
+void LVect1(byte n,TStringGrid *v)
+{
+	if (n==1)
+		v->Cells[0][0] = 0;
+	else {
+		LVect1(n-1,v);
+		if (n%2==0) {
+			v->Cells[n-1][0] = StrToInt(v->Cells[n-2][0]) + 1;
+		} else {
+			v->Cells[n-1][0] = StrToInt(v->Cells[n-2][0]) * 2;
+		}
+	}
+}
+
+unsigned short int SumAB(byte a,byte b,TStringGrid *v)
+{
+	unsigned short int s = 0;
+	if (b==a)
+		s = StrToInt(v->Cells[b-1][0]);
+	else {
+		s = SumAB(a,b-1,v);
+		s = s + StrToInt(v->Cells[b-1][0]);
+	}
+	return s;
+}
+
+String VecToStr(byte n,TStringGrid *v)
+{
+	String s = "";
+	if (n==1) {
+		byte el = StrToInt(v->Cells[0][0]);
+		if (el<10)
+			s = "0" + IntToStr(el);
+		else
+			s = el;
+	} else {
+		byte el = StrToInt(v->Cells[n-1][0]);
+		s = VecToStr(n-1,v);
+		if (el<10)
+			s = s + "0" + IntToStr(el);
+		else
+			s = s + el;
+	}
+    return s;
+}
+
+void StrToVec(byte n,String s,TStringGrid *v)
+{
+	if (s.Length()==2)
+		v->Cells[0][0] = IntToStr(StrToInt(s));
+	else {
+		String le = String(s[s.Length()-1]) + String(s[s.Length()]);
+		s.Delete(s.Length()-1,2);
+		StrToVec(n-1,s,v);
+		v->Cells[n-1][0] = IntToStr(StrToInt(le));
+	}
+}
+
+void StrToVecStr(byte n,String s,TStringGrid *v)
+{
+	if (s.Length()<=2) {
+		String num = "0123456789";
+    }
+}
+
+void NumToVec(Cardinal &num,byte n,TStringGrid *v)
+{
+	if (num<10) {
+		v->Cells[0][0] = num;
+	} else {
+		byte d = num%10;
+		num/=10;
+		NumToVec(num,n-1,v);
+		v->Cells[n-1][0] = d;
+	}
+}
+
+void LFibVec(byte n,TStringGrid *v)
+{
+	if (n==1)
+		v->Cells[0][0] = 0;
+	else if (n == 2) {
+		v->Cells[0][0] = 0;
+		v->Cells[1][0] = 1;
+	}
+	else {
+		LFibVec(n-1,v);
+		v->Cells[n-1][0] = StrToInt(v->Cells[n-2][0]) + StrToInt(v->Cells[n-3][0]);
+	}
+}
+
+String DelVoc(String &s)
+{
+	String vo = "aeiouáéíóúäëïöüAEIOUÁÉÍÓÚÄËÏÖÜ";
+	String wv;
+	if (s.Length()==1) {
+		if (vo.Pos(s)!=0)
+			wv = s;
+	} else {
+		wchar_t lc = s[s.Length()];
+		s.Delete(s.Length(),1);
+		wv = DelVoc(s);
+		if (vo.Pos(lc)!=0)
+			wv += lc;
+	}
+	return wv;
+}
+
+//Contar palabras
+byte CountW(String x) {
+	byte w = 0;
+	String c = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
+	if (x.Length() == 1) {
+		if (c.Pos(x[1])>0)
+			w = 1;
+	}
+	else {
+		w = CountW(x.Delete(1,1));
+		if (x.Length()>1 && c.Pos(x[1])>0 && c.Pos(x[2])==0)
+			w++;
+	}
+	return w;
+}
+
+//Eliminar primera letra de cada palabra
+String DFW(String x) {
+	String ns = "";
+	String c = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
+	if (x.Length() > 1) {
+		char ch = x[1];
+		x.Delete(1,1);
+		ns = DFW(x);
+		if (!(c.Pos(ch)==0 && c.Pos(x[1])>0)) {
+			ns = String(x[1]) + ns;
+		}
+	}
+	return ns;
+}
+
+//Cargar un vector con la serie: 5,9,17,25,37
+void LVS1(TStringGrid *v,byte n,Word &a) {
+	if (n == 1) {
+		v->Cells[n-1][0] = 5;
+		a = 4;
+	} else {
+		LVS1(v,n-1,a);
+		if (n%3 == 0)
+			v->Cells[n-1][0] = StrToInt(v->Cells[n-2][0]) + a;
+		else {
+			v->Cells[n-1][0] = StrToInt(v->Cells[n-2][0]) + a;
+			a += 4;
+		}
+	}
+}
+
+//Cargar un vector de palabras
+void LWV(TStringGrid *v,byte w) {
+	if (w > 0) {
+		LWV(v,w-1);
+		v->Cells[w-1][0] = InputBox("","","Escriba Aqui...");
+	}
+}
+
+//Identificar el primer caracter valido de una palabra
+//esto, solo en caso de que el primer caracter no sea una letra normal
+String FirstL(String x) {
+	String ch = "";
+	String c = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
+	if (ch == "" && x.Length() > 0) {
+		if (c.Pos(x[1])>0)
+			ch = x[1];
+		else
+			ch = FirstL(x.Delete(1,1));
+	}
+	return ch;
+}
+//Devolver una cadena con las primeras de un vector de cadenas
+String SFirstL(TStringGrid *v,byte n) {
+	String s = "";
+	if (n > 0) {
+		s = SFirstL(v,n-1);
+		s += FirstL(v->Cells[n-1][0]);
+	}
+	return s;
+}
+
+// Auxiliar 1 matriz vibora
+void LR(TStringGrid *v,byte r,byte n,byte s) {
+	if (n>0) {
+		v->Cells[n-1][r-1] = s;
+		LR(v,r,n-1,s-1);
+	}
+}
+
+// Auxiliar 2 matriz vibora
+void LRI(TStringGrid *v,byte r,byte n,byte s) {
+	if (n>0) {
+		v->Cells[n-1][r-1] = s;
+		LRI(v,r,n-1,s+1);
+	}
+}
+
+//Auxiliar matriz vibora
+void auxSM(TStringGrid *v,byte r,byte n,byte s) {
+	if (n > 0) {
+		v->Cells[n-1][r-1] = s;
+		if (r%2 == 0)
+			auxSM(v,r,n-1,s+1);
+		else 
+			auxSM(v,r,n-1,s-1);
+	}
+}
+
+// Matriz vibora
+void LME(TStringGrid *m,byte r) {
+	if (r == 1)
+		LR(m,r,m->ColCount,m->ColCount);
+	else {
+		LME(m,r-1);
+		if (r%2==0)
+			LRI(m,r,m->ColCount,StrToInt(m->Cells[m->ColCount-1][r-2])+1);
+		else
+			LR(m,r,m->ColCount,StrToInt(m->Cells[0][r-2])+m->ColCount);
+	}
+}
+
+//Auxiliar matriz vibora 2.0
+void auxSM2(TStringGrid *v,byte r,byte n,byte s) {
+	if (n > 0) {
+		v->Cells[n-1][r-1] = s;
+		if (r%2 == 0)
+			auxSM2(v,r,n-1,s+1);
+		else 
+			auxSM2(v,r,n-1,s-1);
+	}
+}
+
+//Matriz Vibora
+void SnakeM(TStringGrid *m,byte r) {
+	if (r == 1)
+		auxSM2(m,r,m->ColCount,m->ColCount);
+	else {
+		SnakeM(m,r-1);
+		if (r%2 == 0)
+			auxSM2(m,r,m->ColCount,StrToInt(m->Cells[m->ColCount-1][r-2])+1);
+		else                                                       
+			auxSM2(m,r,m->ColCount,StrToInt(m->Cells[0][(r-2)])+m->ColCount);
+	}
+}
+
+//Repetir solo un digito
+String RepDig(byte d,byte t) {
+	String n = "";
+	if (t > 0) {
+		n = RepDig(d,t-1);
+		n += String(d);
+	}
+	return n;
+}
+
+//Repetir todos los digitos
+String RepN(Cardinal n) {
+	String s = "";
+	if (n > 0) {
+		s = RepN(n/10);
+		s+= RepDig(n%10,n%10);
+	}
+	return s;
+}
+
+//Eliminar Vocales
+void DelVow(String &x) {
+	String vow = "aeiouAEIOU"; //si quieren las vocales y acento se las ponen aqui
+	if (x != "") {
+		String ch = x[1];
+		x.Delete(1,1);
+		DelVow(x);
+		if (vow.Pos(ch)==0)
+			x = ch + x;
+	}
+}
+
+//Cargar fila
+void LRaux(TStringGrid *v,byte r,byte n,signed short int s) {
+	if (n>0) {
+		v->Cells[n-1][r-1] = s;
+		LRaux(v,r,n-1,s-1);
+	}
+}
+
+//Forma de cargar matriz
+void LMtx1(TStringGrid *m,byte r,signed short int &i) {
+	if (r == 1) {
+		i = 0;
+		LRaux(m,r,m->ColCount,m->ColCount-i-1);
+	} else {
+		LMtx1(m,r-1,i);
+		i++;
+		LRaux(m,r,m->ColCount,m->ColCount-i-1);
+	}
+}
+
+//Cargar fila
+void LRaux2(TStringGrid *v,byte r,byte n,signed short int s) {
+	if (n>0) {
+		LRaux2(v,r,n-1,s-1);
+		if (s > 0)
+			v->Cells[n-1][r-1] = s;
+	}
+}
+
+//Forma de cargar matriz
+void LMtx2(TStringGrid *m,byte r,signed short int &i) {
+	if (r == 1) {
+		i = 0;
+		LRaux2(m,r,m->ColCount,m->ColCount-i);
+	} else {
+		LMtx2(m,r-1,i);
+		i++;
+		LRaux2(m,r,m->ColCount,m->ColCount-i);
+	}
+}
+					 
+//Cargar vector con: 1/1; -1/4; 1/9; -1/16
+void LVecS(TStringGrid *v,byte n,byte &d,byte &s) {
+	if (n == 1) {
+		d = 1;
+		s = 3;
+		v->Cells[n-1][0] = "1/"+String(d);
+		
+	} else {
+		LVecS(v,n-1,d,s);
+		if (n%2 == 0)
+			v->Cells[n-1][0] = "-1/"+String(d+s);
+		else
+			v->Cells[n-1][0] = "1/"+String(d+s);
+		d += s;
+		s += 2;
+	}
+}
+
+//Cargar vector con: 3,5,9,17,26
+void LVecS2(TStringGrid *v,byte n,byte &s) {
+	if (n == 1) {
+		v->Cells[n-1][0] = 3;
+		s = 2;
+	} else {
+		LVecS2(v,n-1,s);
+		v->Cells[n-1][0] = StrToInt(v->Cells[n-2][0])+s; 	
+		if (n%4 == 0)
+			s++;
+		else
+			s *= 2;
+	}
+}
+
+//Auxiliar para forma de cargar matriz
+void LRIaux(TStringGrid *v,byte r,byte n,signed short int s) {
+	if (n>0) {
+		LRIaux(v,r,n-1,s+1);
+		if (s>0)
+			v->Cells[n-1][r-1] = s;
+		else
+			v->Cells[n-1][r-1] = 1;
+	}
+}
+
+void LMtx3(TStringGrid *m,byte r,signed short int &s) {
+	if (r ==1) {
+		LRIaux(m,r,m->ColCount,1);
+		s = 0;
+	} else {
+		LMtx3(m,r-1,s);
+		s++;
+		LRIaux(m,r,m->ColCount,1-s);
+	}
+}
+
+//String a Vector
+void StrToVec(TStringGrid *v,byte n,String x) {
+	if (x != "") {
+		v->Cells[n-1][0] = x[x.Length()];
+		StrToVec(v,n-1,x.Delete(x.Length(),1));
+	}
+}
+
+//String a Matriz
+void StrToMtx(TStringGrid *m,byte n,String x) {
+	byte N = m->ColCount;
+	if (x != "") {
+		m->Cells[(n-1)%N][(n-1)/N] = x[x.Length()];
+		StrToMtx(m,n-1,x.Delete(x.Length(),1));
+	}
+}
+
+//Obtener numero fibonacci
+Cardinal Fibonacci(byte n)
+{
+	Word r;
+	if (n==0)
+		return 0;
+	else if (n==1) 
+		return 1;
+	else 
+		return(Fibonacci(n-2) + Fibonacci(n-1)); 
+}
+
+//Cargar vector fibonacci invertido
+void LFiboVI(TStringGrid *v,byte n, byte &i) {
+	i = v->ColCount;	
+	if (n == 1 ) {
+		v->Cells[i-1][0] = 0;
+		i--;
+	} else if (n == 2) {
+		v->Cells[i-1][0] = 0;
+		v->Cells[i-2][0] = 1;
+		i-=2;
+	} else {
+		LFiboVI(v,n-1,i);
+		v->Cells[i-1][0] = StrToInt(v->Cells[i][0]) + StrToInt(v->Cells[i+1][0]);
+		i--;
+	}
+}
+
+//Insertar espacio
+void InsSpc(TStringGrid *v,byte n,byte p) {
+	if (n == p) {
+		v->Cells[n][0] = v->Cells[n-1][0];
+		v->ColCount++;
+	} else {
+		v->Cells[n][0] = v->Cells[n-1][0];
+		InsSpc(v,n-1,p);
+	}
+
+	//Forma reducida del algoritmo, pero hay que aumentar una casilla al vector
+	/*if (n >= p) {
+		v->Cells[n][0] = v->Cells[n-1][0];
+		InsSpc(v,n-1,p);
+	} */
+}
+
+//Insertar vector en otro vector
+void InsVecIntoVec(TStringGrid *v1,TStringGrid *v2,byte n1,byte n2,byte p) {
+	if (n2 > 0) {
+		InsSpc(v1,n1,p);
+		v1->Cells[p-1][0] = v2->Cells[n2-1][0];
+		InsVecIntoVec(v1,v2,n1+1,n2-1,p);
+	}
+}

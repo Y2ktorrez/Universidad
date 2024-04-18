@@ -1,0 +1,31 @@
+
+Objetivo.
+- encontrar el punto exacto del problema
+- para averiguar como funciona
+
+Ejercicio
+1. Escribir un algoritmo para eleminar todos los caracteres NO  alfabeticos ecepto el espacio de una cadena 
+   Ej. x = "@$#hola 425 chau" --> x = "Hola Chau"
+
+P0. 
+   E: x(Una cadena)
+   S: x 
+
+P1.
+   VR = n (Cant. de caracteres de x)
+
+P2. 
+   Dn = byte interseccion N
+        [0,255] interseccion [0, infinito]
+   Dn = [0,255]
+
+P3.
+   n = 0 
+   x = "" --> (Nada)
+
+P4. 
+   k = n-2,  menos el primero y el ultimo
+   x = "@$#hola 425 chau" --> "$#hola 425 cha"
+       a=@ ; b=u
+   x = "hola..chau" /*.. dos espacios*/ 
+                           
